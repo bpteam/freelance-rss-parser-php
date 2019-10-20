@@ -1,0 +1,12 @@
+monolog:
+  handlers:
+    streamed_main:
+      type:  rotating_file
+      path:  '%kernel.logs_dir%/%kernel.environment%.log'
+      level: DEBUG
+      max_files: 3
+
+    streamed_stdout:
+      type: stream
+      path: 'php://stdout'
+      level: DEBUG

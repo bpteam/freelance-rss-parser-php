@@ -1,0 +1,36 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  app.checker.keywords.upwork_com:
+    class: Freelance\Checker\KeywordsChecker
+    arguments:
+      $keywords:
+        - 'scrape'
+        - 'scrapi'
+        - 'crawler'
+        - 'crawling'
+        - 'extract'
+        - 'parser'
+        - 'parsing'
+        - 'data mining'
+        - 'collect'
+
+  app.checker.keywords.fl_ru:
+    class: Freelance\Checker\KeywordsChecker
+    arguments:
+      $keywords:
+        - 'парсе'
+        - 'парса'
+        - 'парси'
+        - 'сбор'
+        - 'собрать'
+        - 'скрапер'
+        - 'скраппер'
+        - 'екстрактор'
+        - 'экстрактор'
+        - 'parser'
+        - 'scrape'
+        - 'scrapi'
+        - 'extract'

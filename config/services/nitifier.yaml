@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  app.notifier.telegram:
+    class: Freelance\Notifier\TelegramNotifier
+    arguments:
+      $template: '@app.template.markdown'
+      $bitApi: '@app.telegram.bot_freelance_scraper'
+      $userId: '%my_telegram_user_id%'

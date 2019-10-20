@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  app.feed.upwork_com:
+    class: Freelance\Feed\UpworkComFeed
+    arguments:
+      $loader: '@app.loader'
+
+  app.feed.fl_ru:
+    class: Freelance\Feed\FlRuFeed
+    arguments:
+      $loader: '@app.loader'

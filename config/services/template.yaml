@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  app.template.simple:
+    class: Freelance\Template\SimpleTemplate
+
+  app.template.markdown:
+    class: Freelance\Template\MarkdownTemplate
+    arguments:
+      $htmlConverter: '@app.tool.markdown_converter'

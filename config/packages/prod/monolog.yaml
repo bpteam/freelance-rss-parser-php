@@ -1,0 +1,14 @@
+monolog:
+  handlers:
+    sentry:
+      type: service
+      id: sentry.monolog.handler
+      level: ERROR
+      min_level: ERROR
+
+    streamed_main:
+      type:  rotating_file
+      path:  '%kernel.logs_dir%/%kernel.environment%.log'
+      level: WARNING
+      min_level: WARNING
+      max_files: 3

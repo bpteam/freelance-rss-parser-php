@@ -1,0 +1,33 @@
+parameters:
+  env(DATABASE_URL): ''
+  env(STORAGE_HOST): ''
+  env(STORAGE_PORT): ''
+  env(STORAGE_USER): ''
+  env(STORAGE_PASS): ''
+  env(STORAGE_DB): ''
+
+  postgresql_host: '%env(STORAGE_HOST)%'
+  postgresql_port: '%env(STORAGE_PORT)%'
+  postgresql_user: '%env(STORAGE_USER)%'
+  postgresql_pass: '%env(STORAGE_PASS)%'
+  postgresql_db: '%env(STORAGE_DB)%'
+
+doctrine:
+  dbal:
+    driver: 'pdo_pgsql'
+    server_version: '10.4'
+    dbname: '%postgresql_db%'
+    user: '%postgresql_user%'
+    password: '%postgresql_pass%'
+    host: '%postgresql_host%'
+  orm:
+    auto_generate_proxy_classes: true
+    naming_strategy: doctrine.orm.naming_strategy.underscore
+    auto_mapping: true
+    mappings:
+      Freelance:
+        is_bundle: false
+        type: annotation
+        dir: '%kernel.project_dir%/src/Entity'
+        prefix: 'Freelance\Entity'
+        alias: Freelance

@@ -1,0 +1,33 @@
+parameters:
+  'env(APP_NAME)': 'RSS_PARSER_PHP'
+  'env(VERSION)': 'UNDEFINED'
+
+  app.name: '%env(APP_NAME)%'
+  app.version: '%env(VERSION)%'
+
+imports:
+  - { resource: services/*.yaml }
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Freelance\:
+    resource: '../src/*'
+    exclude: '../src/{DependencyInjection,Command,Entity,Migrations,Tests,Kernel.php}'
+
+  GuzzleHttp\Client: ~
+
+  app.loader:
+    class: Freelance\Loader\GuzzleLoader
+    arguments:
+      $guzzle: '@GuzzleHttp\Client'
+      $logger: '@logger'
+
+  app.tool.markdown_converter:
+    class: League\HTMLToMarkdown\HtmlConverter
+    arguments:
+      $options:
+        strip_tags: true
+        hard_break: true

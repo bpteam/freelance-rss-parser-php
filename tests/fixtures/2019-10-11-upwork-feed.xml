@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title><![CDATA[All jobs | upwork.com]]></title><link><![CDATA[https://www.upwork.com/]]></link><description><![CDATA[All jobs as of October 11, 2019 13:24 UTC]]></description><language>en-us</language><pubDate>Fri, 11 Oct 2019 13:24:05 +0000</pubDate><copyright>© 2003-2019 Upwork Corporation</copyright><docs>http://blogs.law.harvard.edu/tech/rss</docs><generator>Upwork Corporation</generator><managingEditor>rss@upwork.com (Upwork Corporation)</managingEditor><image><url>https://www.upwork.com/images/rss_logo.png</url><title><![CDATA[All jobs | upwork.com]]></title><link><![CDATA[https://www.upwork.com/]]></link></image><item><title><![CDATA[Need script to look at pdfs in a folder and build excel file based on results - Upwork]]></title><link>https://www.upwork.com/jobs/Need-script-look-pdfs-folder-and-build-excel-file-based-results_%7E01c9cc27706bb7b788?source=rss</link><description><![CDATA[I have a folder full of engineering drawing PDF&#039;s, and I need a script that will create two excel files based on them.<br /><br />
+The first file should contain one column for the part number, one column for the description (title), and one column for the revision (A, B, C, etc.). This information is in the same place on each PDF. Some PDF&#039;s have multiple pages, but we just need the data from the first page, and all first pages are in the same format.<br /><br />
+The second file should be for PDF&#039;s of parts that have multiple sub-components. These files have tables on the first page that describe the item no., quantity, part no., and description. They will always be on the first page, but are sometimes in different formats, so the script should read the column headers and form an excel sheet that has these columns: parent part #, child part #, quantity, and description. Parent part # should be the drawing number, child part # is part no. in the table, then quantity and description are self explanatory. Item no. is not used.<br /><br />
+Attached are sample PDF&#039;s and an excel file showing how I would like the results to be formatted. Files A1 and A2 are examples of PDF&#039;s with sub-component tables, while the rest are examples of individual parts.<br /><br /><b>Budget</b>: $40
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Need-script-look-pdfs-folder-and-build-excel-file-based-results_%7E01c9cc27706bb7b788?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[I have a folder full of engineering drawing PDF&#039;s, and I need a script that will create two excel files based on them.<br /><br />
+The first file should contain one column for the part number, one column for the description (title), and one column for the revision (A, B, C, etc.). This information is in the same place on each PDF. Some PDF&#039;s have multiple pages, but we just need the data from the first page, and all first pages are in the same format.<br /><br />
+The second file should be for PDF&#039;s of parts that have multiple sub-components. These files have tables on the first page that describe the item no., quantity, part no., and description. They will always be on the first page, but are sometimes in different formats, so the script should read the column headers and form an excel sheet that has these columns: parent part #, child part #, quantity, and description. Parent part # should be the drawing number, child part # is part no. in the table, then quantity and description are self explanatory. Item no. is not used.<br /><br />
+Attached are sample PDF&#039;s and an excel file showing how I would like the results to be formatted. Files A1 and A2 are examples of PDF&#039;s with sub-component tables, while the rest are examples of individual parts.<br /><br /><b>Budget</b>: $40
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Need-script-look-pdfs-folder-and-build-excel-file-based-results_%7E01c9cc27706bb7b788?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 12:59:30 +0000</pubDate><guid>https://www.upwork.com/jobs/Need-script-look-pdfs-folder-and-build-excel-file-based-results_%7E01c9cc27706bb7b788?source=rss</guid></item><item><title><![CDATA[Crawl outsourcing data through websites - Upwork]]></title><link>https://www.upwork.com/jobs/Crawl-outsourcing-data-through-websites_%7E01796ace231225a416?source=rss</link><description><![CDATA[Crawl outsourcing data through websites<br />
+we need your help to crawl outsourcing data from website platform<br /><br />
+we need someone to gather at least 30-50 website data. All of these crawl processes for each website should apply anti-robot-model / IP pool / auto-checking whole the refreshing data appending.Please use scrapy or selenium to gather all the outsourcing data and hand us the clean code/framwork model. And we prefer all of the programs to be modelized.<br />
+like modelized refreshing / IP pool / anti-robot-detection /any kinda way that could gather all the data by the same models and motion. they are all building within scrapy framework mostly<br /><br />
+we already crawl some of the websites but we need someone to do this more efficiently and performing better on anti-robot-detection &amp;amp; keep all the fresh data recorded robusted all the time<br /><br />
+The raw dataformat is on attachment file(RAW_SOURCE_DOC.txt), putting null if the feature column is not exsist :D<br /><br /><br />
+Please gather the souce website from these two pages :<br />
+https://www.g2.com/categories/freelance-platforms?order=popular#product-list<br />
+https://www.g2.com/categories/freelance-platforms?order=popular&amp;amp;page=2#product-list<br /><br />
+and also these websites if it&#039;s not including :D<br /><br />
+Upwork<br />
+Freelancer.com<br />
+Guru<br />
+DesignHill<br />
+Fiverr<br />
+Behance<br />
+Clarity<br />
+Zirtual<br />
+Folyo<br />
+Gigster<br />
+Toptal<br />
+99designs<br />
+Creative Market<br />
+PeoplePerHour<br />
+Smashing Jobs<br />
+HubStaff Talent<br />
+People Per Hour<br />
+Outsource.com<br />
+rentacoder<br />
+Scriptlance<br />
+Mechanical Turk<br />
+Hire the world<br />
+Remplo<br />
+Getserio<br />
+ifreelance<br />
+Taskarmy<br />
+Onlinejobs<br />
+taskrabbit<br />
+Crowdspring<br />
+99designs<br />
+Onlinejobs<br />
+taskrabbit<br />
+Crowdspring<br />
+Airfleet<br />
+iwriter<br />
+Solution inn<br />
+Hidden Founders<br />
+VirtualCoworker.com<br />
+Zirtual<br />
+SolutionsInn<br />
+Lilach Bullock<br />
+Airfleet<br />
+iwriter<br />
+Solution inn<br />
+VirtualCoworker.com<br /><br /><b>Budget</b>: $200
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: Taiwan
+<br /><a href="https://www.upwork.com/jobs/Crawl-outsourcing-data-through-websites_%7E01796ace231225a416?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Crawl outsourcing data through websites<br />
+we need your help to crawl outsourcing data from website platform<br /><br />
+we need someone to gather at least 30-50 website data. All of these crawl processes for each website should apply anti-robot-model / IP pool / auto-checking whole the refreshing data appending.Please use scrapy or selenium to gather all the outsourcing data and hand us the clean code/framwork model. And we prefer all of the programs to be modelized.<br />
+like modelized refreshing / IP pool / anti-robot-detection /any kinda way that could gather all the data by the same models and motion. they are all building within scrapy framework mostly<br /><br />
+we already crawl some of the websites but we need someone to do this more efficiently and performing better on anti-robot-detection &amp;amp; keep all the fresh data recorded robusted all the time<br /><br />
+The raw dataformat is on attachment file(RAW_SOURCE_DOC.txt), putting null if the feature column is not exsist :D<br /><br /><br />
+Please gather the souce website from these two pages :<br />
+https://www.g2.com/categories/freelance-platforms?order=popular#product-list<br />
+https://www.g2.com/categories/freelance-platforms?order=popular&amp;amp;page=2#product-list<br /><br />
+and also these websites if it&#039;s not including :D<br /><br />
+Upwork<br />
+Freelancer.com<br />
+Guru<br />
+DesignHill<br />
+Fiverr<br />
+Behance<br />
+Clarity<br />
+Zirtual<br />
+Folyo<br />
+Gigster<br />
+Toptal<br />
+99designs<br />
+Creative Market<br />
+PeoplePerHour<br />
+Smashing Jobs<br />
+HubStaff Talent<br />
+People Per Hour<br />
+Outsource.com<br />
+rentacoder<br />
+Scriptlance<br />
+Mechanical Turk<br />
+Hire the world<br />
+Remplo<br />
+Getserio<br />
+ifreelance<br />
+Taskarmy<br />
+Onlinejobs<br />
+taskrabbit<br />
+Crowdspring<br />
+99designs<br />
+Onlinejobs<br />
+taskrabbit<br />
+Crowdspring<br />
+Airfleet<br />
+iwriter<br />
+Solution inn<br />
+Hidden Founders<br />
+VirtualCoworker.com<br />
+Zirtual<br />
+SolutionsInn<br />
+Lilach Bullock<br />
+Airfleet<br />
+iwriter<br />
+Solution inn<br />
+VirtualCoworker.com<br /><br /><b>Budget</b>: $200
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: Taiwan
+<br /><a href="https://www.upwork.com/jobs/Crawl-outsourcing-data-through-websites_%7E01796ace231225a416?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 12:37:57 +0000</pubDate><guid>https://www.upwork.com/jobs/Crawl-outsourcing-data-through-websites_%7E01796ace231225a416?source=rss</guid></item><item><title><![CDATA[HubSpot design and set up - Upwork]]></title><link>https://www.upwork.com/jobs/HubSpot-design-and-set_%7E0134a216a8d3b6aced?source=rss</link><description><![CDATA[In need of help designing HubSpot and uploading data appropriately. Once that is complete, potentially in need of either web scraping automation or ongoing data mining support and uploading. Also in need of assistance designing HubSpot campaigns, landing pages, automation, etc.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; Email &amp; Marketing Automation
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/HubSpot-design-and-set_%7E0134a216a8d3b6aced?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[In need of help designing HubSpot and uploading data appropriately. Once that is complete, potentially in need of either web scraping automation or ongoing data mining support and uploading. Also in need of assistance designing HubSpot campaigns, landing pages, automation, etc.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; Email &amp; Marketing Automation
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/HubSpot-design-and-set_%7E0134a216a8d3b6aced?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 12:25:16 +0000</pubDate><guid>https://www.upwork.com/jobs/HubSpot-design-and-set_%7E0134a216a8d3b6aced?source=rss</guid></item><item><title><![CDATA[Web Scraping, Web Crawling help needed - Upwork]]></title><link>https://www.upwork.com/jobs/Web-Scraping-Web-Crawling-help-needed_%7E0127c2206b44ef093e?source=rss</link><description><![CDATA[I am trying to extract data from couple websites from their search, careers and candidate profiles. I need help to scrawl that data, scrape/extract it into a database. This data can be extracted real-time or as a schedule.<br /><br /><b>Budget</b>: $50
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Web-Scraping-Web-Crawling-help-needed_%7E0127c2206b44ef093e?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[I am trying to extract data from couple websites from their search, careers and candidate profiles. I need help to scrawl that data, scrape/extract it into a database. This data can be extracted real-time or as a schedule.<br /><br /><b>Budget</b>: $50
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Web-Scraping-Web-Crawling-help-needed_%7E0127c2206b44ef093e?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 12:24:13 +0000</pubDate><guid>https://www.upwork.com/jobs/Web-Scraping-Web-Crawling-help-needed_%7E0127c2206b44ef093e?source=rss</guid></item><item><title><![CDATA[sort data - Upwork]]></title><link>https://www.upwork.com/jobs/sort-data_%7E013a4407329f28eac3?source=rss</link><description><![CDATA[please sort data in a clean excel document, with accurate results . <br />
+manual job.<br /><br /><b>Budget</b>: $10
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: United Kingdom
+<br /><a href="https://www.upwork.com/jobs/sort-data_%7E013a4407329f28eac3?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[please sort data in a clean excel document, with accurate results . <br />
+manual job.<br /><br /><b>Budget</b>: $10
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: United Kingdom
+<br /><a href="https://www.upwork.com/jobs/sort-data_%7E013a4407329f28eac3?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 12:21:27 +0000</pubDate><guid>https://www.upwork.com/jobs/sort-data_%7E013a4407329f28eac3?source=rss</guid></item><item><title><![CDATA[Find emails from a domains list - Upwork]]></title><link>https://www.upwork.com/jobs/Find-emails-from-domains-list_%7E013fb1d7c7ee7e2af3?source=rss</link><description><![CDATA[*ENGLISH*<br /><br />
+The task is to find the contact emails for the list of websites I will provide. <br /><br />
+I want the contact emails from the person who writted the article of the list, or the department in charge of that type of content in that website. And also, a more general website contact email.<br /><br />
+You will need to fill the Spreadsheet with the contact name, and email address for each website.<br /><br />
+Thanks<br /><br /><b>Budget</b>: $20
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Mining &amp; Management
+<br /><b>Country</b>: Spain
+<br /><a href="https://www.upwork.com/jobs/Find-emails-from-domains-list_%7E013fb1d7c7ee7e2af3?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[*ENGLISH*<br /><br />
+The task is to find the contact emails for the list of websites I will provide. <br /><br />
+I want the contact emails from the person who writted the article of the list, or the department in charge of that type of content in that website. And also, a more general website contact email.<br /><br />
+You will need to fill the Spreadsheet with the contact name, and email address for each website.<br /><br />
+Thanks<br /><br /><b>Budget</b>: $20
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Mining &amp; Management
+<br /><b>Country</b>: Spain
+<br /><a href="https://www.upwork.com/jobs/Find-emails-from-domains-list_%7E013fb1d7c7ee7e2af3?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 12:16:52 +0000</pubDate><guid>https://www.upwork.com/jobs/Find-emails-from-domains-list_%7E013fb1d7c7ee7e2af3?source=rss</guid></item><item><title><![CDATA[Monthly Lead Generation (3,200 emails) - ongoing job! - Upwork]]></title><link>https://www.upwork.com/jobs/Monthly-Lead-Generation-200-emails-ongoing-job_%7E015a2e8716219e985f?source=rss</link><description><![CDATA[*****Please not if you accept a job and begin to discuss a change of payment or terms I will report you immediately and terminate our contract.****<br /><br />
+Hello<br /><br />
+I am looking for a smart, efficient, honest and reliable lead generation agency. This job will be monthly and ongoing for the right agency with good critical thinking and research skills, experience, and able to meet deadline and produce fast and bulk results! <br /><br />
+I am look for an agency to work with and give all my client work to as we grow.<br /><br />
+About 30% will be simply finding the emails - I will provide you with a list with name, title and company<br /><br />
+The one 70% will be lead generation/ internet research&nbsp;&nbsp;- You will need to find companies that meet a specific criteria and from these companies I will need emails for specific job titles (firstname, last name, title, email address) For example, UK SME 50-200 size private pension companies (this is only an example). I will give you a specific list of job titles as well. <br /><br />
+If an email bounces back, or you&#039;ve identified the incorrect person or company this will not count toward your emails. <br /><br />
+The data needs to be clean and ready to use! NO spaces, commas, all capital words (eg &#039;Adam&#039; not &#039;ADAM).<br /><br />
+I&#039;m looking for a solid, honest and enjoyable working relationship.<br /><br />
+Please let me know how you find your data. I am looking for an agency that uses great technology, not only LinkedIn.&nbsp;&nbsp;<br /><br />
+*****Please not if you accept a job and begin to discuss a change of payment or terms I will report you immediately and terminate our contract.****<br /><br />
+Thank you<br /><br /><b>Budget</b>: $170
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; Lead Generation
+<br /><b>Country</b>: United Kingdom
+<br /><a href="https://www.upwork.com/jobs/Monthly-Lead-Generation-200-emails-ongoing-job_%7E015a2e8716219e985f?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[*****Please not if you accept a job and begin to discuss a change of payment or terms I will report you immediately and terminate our contract.****<br /><br />
+Hello<br /><br />
+I am looking for a smart, efficient, honest and reliable lead generation agency. This job will be monthly and ongoing for the right agency with good critical thinking and research skills, experience, and able to meet deadline and produce fast and bulk results! <br /><br />
+I am look for an agency to work with and give all my client work to as we grow.<br /><br />
+About 30% will be simply finding the emails - I will provide you with a list with name, title and company<br /><br />
+The one 70% will be lead generation/ internet research&nbsp;&nbsp;- You will need to find companies that meet a specific criteria and from these companies I will need emails for specific job titles (firstname, last name, title, email address) For example, UK SME 50-200 size private pension companies (this is only an example). I will give you a specific list of job titles as well. <br /><br />
+If an email bounces back, or you&#039;ve identified the incorrect person or company this will not count toward your emails. <br /><br />
+The data needs to be clean and ready to use! NO spaces, commas, all capital words (eg &#039;Adam&#039; not &#039;ADAM).<br /><br />
+I&#039;m looking for a solid, honest and enjoyable working relationship.<br /><br />
+Please let me know how you find your data. I am looking for an agency that uses great technology, not only LinkedIn.&nbsp;&nbsp;<br /><br />
+*****Please not if you accept a job and begin to discuss a change of payment or terms I will report you immediately and terminate our contract.****<br /><br />
+Thank you<br /><br /><b>Budget</b>: $170
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; Lead Generation
+<br /><b>Country</b>: United Kingdom
+<br /><a href="https://www.upwork.com/jobs/Monthly-Lead-Generation-200-emails-ongoing-job_%7E015a2e8716219e985f?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 11:58:39 +0000</pubDate><guid>https://www.upwork.com/jobs/Monthly-Lead-Generation-200-emails-ongoing-job_%7E015a2e8716219e985f?source=rss</guid></item><item><title><![CDATA[Improve my Google content extractor - Bypass Server &amp;amp; Google limits - Upwork]]></title><link>https://www.upwork.com/jobs/Improve-Google-content-extractor-Bypass-Server-amp-Google-limits_%7E01d9b176cc6210e081?source=rss</link><description><![CDATA[Hello<br /><br />
+My PHP script extracts content from Google search results according to some settings and a list of keywords. However it s often overloading my server and blocked by both my server and Google. So I need someone who is able to understand the restrictions, then improve this script to add special techniques to add iterations (human emulation or piece by piece processing in order to bypass both my server and google restrictions or limits)<br /><br />
+Each iteration must be able to process faster than any script execution time limits on your server.<br /><br />
+In order to not reach servers limits or Google restrictions, scraped paragraphs must show slowly one after one and before the end of the scraping session.<br /><br />
+- This could be done by adding a list of private proxies<br />
+- Add threads<br />
+- Cron jobs<br />
+etc...<br /><br /><br />
+Please bid only if you are EXPERIENCED and confident with this job. As I already hired people who were not successful and made me waste time<br /><br /><br />
+Thank you!<br /><br />
+I m attaching a screenshot of my script so you can understand exactly what this script can scrape and what are the scraping settings.<br /><br /><b>Budget</b>: $50
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Scripts &amp; Utilities
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Improve-Google-content-extractor-Bypass-Server-amp-Google-limits_%7E01d9b176cc6210e081?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Hello<br /><br />
+My PHP script extracts content from Google search results according to some settings and a list of keywords. However it s often overloading my server and blocked by both my server and Google. So I need someone who is able to understand the restrictions, then improve this script to add special techniques to add iterations (human emulation or piece by piece processing in order to bypass both my server and google restrictions or limits)<br /><br />
+Each iteration must be able to process faster than any script execution time limits on your server.<br /><br />
+In order to not reach servers limits or Google restrictions, scraped paragraphs must show slowly one after one and before the end of the scraping session.<br /><br />
+- This could be done by adding a list of private proxies<br />
+- Add threads<br />
+- Cron jobs<br />
+etc...<br /><br /><br />
+Please bid only if you are EXPERIENCED and confident with this job. As I already hired people who were not successful and made me waste time<br /><br /><br />
+Thank you!<br /><br />
+I m attaching a screenshot of my script so you can understand exactly what this script can scrape and what are the scraping settings.<br /><br /><b>Budget</b>: $50
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Scripts &amp; Utilities
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Improve-Google-content-extractor-Bypass-Server-amp-Google-limits_%7E01d9b176cc6210e081?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 11:16:37 +0000</pubDate><guid>https://www.upwork.com/jobs/Improve-Google-content-extractor-Bypass-Server-amp-Google-limits_%7E01d9b176cc6210e081?source=rss</guid></item><item><title><![CDATA[Python Crawler development - Upwork]]></title><link>https://www.upwork.com/jobs/Python-Crawler-development_%7E012a422cb5e0fcc039?source=rss</link><description><![CDATA[Hello coders.<br />
+I am looking for someone who can code a python script/crawler for me.<br />
+I am managing a lot of facebook ad accounts, and I want to automate the data scrambling.<br /><br />
+I need 2 programs/scripts/bots/crawlers.<br /><br />
+First: a script that takes the daily spendings from multiple facebook ad accounts(probably easiest to develop as a chrome plugin) and enter in to a google sheet.<br /><br />
+Second: a script that takes the earnings from the affiliate network I am working with and entering in to the same google sheet.<br /><br />
+# PRICE IS NEGOCIABLE SO FEEL FREE TO GIVE ME OFFERS! #<br /><br /><b>Budget</b>: $50,000
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Scripts &amp; Utilities
+<br /><b>Country</b>: Denmark
+<br /><a href="https://www.upwork.com/jobs/Python-Crawler-development_%7E012a422cb5e0fcc039?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Hello coders.<br />
+I am looking for someone who can code a python script/crawler for me.<br />
+I am managing a lot of facebook ad accounts, and I want to automate the data scrambling.<br /><br />
+I need 2 programs/scripts/bots/crawlers.<br /><br />
+First: a script that takes the daily spendings from multiple facebook ad accounts(probably easiest to develop as a chrome plugin) and enter in to a google sheet.<br /><br />
+Second: a script that takes the earnings from the affiliate network I am working with and entering in to the same google sheet.<br /><br />
+# PRICE IS NEGOCIABLE SO FEEL FREE TO GIVE ME OFFERS! #<br /><br /><b>Budget</b>: $50,000
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Scripts &amp; Utilities
+<br /><b>Country</b>: Denmark
+<br /><a href="https://www.upwork.com/jobs/Python-Crawler-development_%7E012a422cb5e0fcc039?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 11:03:13 +0000</pubDate><guid>https://www.upwork.com/jobs/Python-Crawler-development_%7E012a422cb5e0fcc039?source=rss</guid></item><item><title><![CDATA[Skilled Scraper Needed To Build Email Database From Domains - Upwork]]></title><link>https://www.upwork.com/jobs/Skilled-Scraper-Needed-Build-Email-Database-From-Domains_%7E01dd977f35998c5b92?source=rss</link><description><![CDATA[Needs to scrape various domains for emails to build database.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: Netherlands
+<br /><a href="https://www.upwork.com/jobs/Skilled-Scraper-Needed-Build-Email-Database-From-Domains_%7E01dd977f35998c5b92?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Needs to scrape various domains for emails to build database.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: Netherlands
+<br /><a href="https://www.upwork.com/jobs/Skilled-Scraper-Needed-Build-Email-Database-From-Domains_%7E01dd977f35998c5b92?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 10:49:43 +0000</pubDate><guid>https://www.upwork.com/jobs/Skilled-Scraper-Needed-Build-Email-Database-From-Domains_%7E01dd977f35998c5b92?source=rss</guid></item><item><title><![CDATA[Need to build simple bot for searching &amp;amp; scraping - Upwork]]></title><link>https://www.upwork.com/jobs/Need-build-simple-bot-for-searching-amp-scraping_%7E0176a74b9a7edcb406?source=rss</link><description><![CDATA[We are looking an expert programmer experienced with the creation of web-scraping bots. The project involves copy and pasting data from an excel sheet and performing searches using an online people search database we&#039;re currently subscribed to. The bot needs to be able to make simple decisions whenever a positive result is returned which should the data should be copied to a spreadsheet.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Need-build-simple-bot-for-searching-amp-scraping_%7E0176a74b9a7edcb406?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[We are looking an expert programmer experienced with the creation of web-scraping bots. The project involves copy and pasting data from an excel sheet and performing searches using an online people search database we&#039;re currently subscribed to. The bot needs to be able to make simple decisions whenever a positive result is returned which should the data should be copied to a spreadsheet.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Need-build-simple-bot-for-searching-amp-scraping_%7E0176a74b9a7edcb406?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 10:44:29 +0000</pubDate><guid>https://www.upwork.com/jobs/Need-build-simple-bot-for-searching-amp-scraping_%7E0176a74b9a7edcb406?source=rss</guid></item><item><title><![CDATA[Scrape all cannabis dispensaries in the US and CA - Upwork]]></title><link>https://www.upwork.com/jobs/Scrape-all-cannabis-dispensaries-the-and_%7E01cd2cdee28006c2e8?source=rss</link><description><![CDATA[I need an expert scraper to scrape Scrape Marijuana Dispensaries across US (and later Cannada).<br /><br />
+The data can be scraped from Weedmaps, Leafly, Yelp, Google Maps.<br /><br />
+We&#039;ll need to discuss the exact list of the data we&#039;ll need to collect, but generally here&#039;s what I&#039;ll need:<br /><br />
+&ndash; Dispensary Name<br />
+&ndash; Address<br />
+&ndash; City<br />
+&ndash; State<br />
+&ndash; Zip<br />
+&ndash; Contact<br />
+&ndash; Email<br />
+&ndash; Website<br />
+&ndash; Opening Hours<br />
+&ndash; Ratings<br />
+&ndash; Reviews<br /><br />
+If US and CA scraping is successful, there might be some more work for you.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Scrape-all-cannabis-dispensaries-the-and_%7E01cd2cdee28006c2e8?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[I need an expert scraper to scrape Scrape Marijuana Dispensaries across US (and later Cannada).<br /><br />
+The data can be scraped from Weedmaps, Leafly, Yelp, Google Maps.<br /><br />
+We&#039;ll need to discuss the exact list of the data we&#039;ll need to collect, but generally here&#039;s what I&#039;ll need:<br /><br />
+&ndash; Dispensary Name<br />
+&ndash; Address<br />
+&ndash; City<br />
+&ndash; State<br />
+&ndash; Zip<br />
+&ndash; Contact<br />
+&ndash; Email<br />
+&ndash; Website<br />
+&ndash; Opening Hours<br />
+&ndash; Ratings<br />
+&ndash; Reviews<br /><br />
+If US and CA scraping is successful, there might be some more work for you.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Scrape-all-cannabis-dispensaries-the-and_%7E01cd2cdee28006c2e8?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 10:39:45 +0000</pubDate><guid>https://www.upwork.com/jobs/Scrape-all-cannabis-dispensaries-the-and_%7E01cd2cdee28006c2e8?source=rss</guid></item><item><title><![CDATA[ZennoPoster Automation for data mining and extraction - Upwork]]></title><link>https://www.upwork.com/jobs/ZennoPoster-Automation-for-data-mining-and-extraction_%7E01ac236c9139591c8a?source=rss</link><description><![CDATA[Need some one who can have professional of ZennoPoster to build the project of data mining automation.<br /><br /><b>Budget</b>: $150
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: Vietnam
+<br /><a href="https://www.upwork.com/jobs/ZennoPoster-Automation-for-data-mining-and-extraction_%7E01ac236c9139591c8a?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Need some one who can have professional of ZennoPoster to build the project of data mining automation.<br /><br /><b>Budget</b>: $150
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: Vietnam
+<br /><a href="https://www.upwork.com/jobs/ZennoPoster-Automation-for-data-mining-and-extraction_%7E01ac236c9139591c8a?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 10:39:45 +0000</pubDate><guid>https://www.upwork.com/jobs/ZennoPoster-Automation-for-data-mining-and-extraction_%7E01ac236c9139591c8a?source=rss</guid></item><item><title><![CDATA[Customer-Facing Python Developer - Upwork]]></title><link>https://www.upwork.com/jobs/Customer-Facing-Python-Developer_%7E018392d9f686f76c64?source=rss</link><description><![CDATA[Shooju is growing.&nbsp;&nbsp;We are looking for long-term Python developer generalists to join our team.&nbsp;&nbsp;The *trial* task will be writing a scraper in Python.&nbsp;&nbsp;<br /><br />
+Successful candidates will:<br /><br />
+* demonstrate proficiency in Python in the trial task<br />
+* have interest and experience in data engineering<br />
+* express strong interest and have experience in customer-facing roles<br />
+* be able to speak English fluently<br />
+* want to work independently with minimal daily leadership<br /><br />
+Preferences:<br />
+* Comfortable working in the Americas timezone<br />
+* Portuguese speaker<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Web Development
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Customer-Facing-Python-Developer_%7E018392d9f686f76c64?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Shooju is growing.&nbsp;&nbsp;We are looking for long-term Python developer generalists to join our team.&nbsp;&nbsp;The *trial* task will be writing a scraper in Python.&nbsp;&nbsp;<br /><br />
+Successful candidates will:<br /><br />
+* demonstrate proficiency in Python in the trial task<br />
+* have interest and experience in data engineering<br />
+* express strong interest and have experience in customer-facing roles<br />
+* be able to speak English fluently<br />
+* want to work independently with minimal daily leadership<br /><br />
+Preferences:<br />
+* Comfortable working in the Americas timezone<br />
+* Portuguese speaker<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Web Development
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Customer-Facing-Python-Developer_%7E018392d9f686f76c64?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 16 Aug 2019 12:07:44 +0000</pubDate><guid>https://www.upwork.com/jobs/Customer-Facing-Python-Developer_%7E018392d9f686f76c64?source=rss</guid></item><item><title><![CDATA[LinkedIn lead sourcing - French basics required - Upwork]]></title><link>https://www.upwork.com/jobs/LinkedIn-lead-sourcing-French-basics-required_%7E01c0eefe62cc833899?source=rss</link><description><![CDATA[I&#039;d like to gather, only for french profiles:<br /><br />
+- Email, firstname, lastname, function from a given country (france), job title, industry, city, linkedIn profile link, company, website, company size, company city<br />
+- Targets: Conducteurs de travaux, dirigeant<br />
+- Industry sector: couverture (roofing), &eacute;tanch&eacute;it&eacute;, bardage, travaux de fa&ccedil;ades<br /><br />
+Of course my main concern is for the leads to be precise and qualified, that&#039;s why I request french skills.<br /><br />
+The idea behind our collaboration would be to contact you again for my future similar needs (if that one is a success, there will be more).<br /><br /><b>Budget</b>: $60
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; Lead Generation
+<br /><b>Country</b>: France
+<br /><a href="https://www.upwork.com/jobs/LinkedIn-lead-sourcing-French-basics-required_%7E01c0eefe62cc833899?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[I&#039;d like to gather, only for french profiles:<br /><br />
+- Email, firstname, lastname, function from a given country (france), job title, industry, city, linkedIn profile link, company, website, company size, company city<br />
+- Targets: Conducteurs de travaux, dirigeant<br />
+- Industry sector: couverture (roofing), &eacute;tanch&eacute;it&eacute;, bardage, travaux de fa&ccedil;ades<br /><br />
+Of course my main concern is for the leads to be precise and qualified, that&#039;s why I request french skills.<br /><br />
+The idea behind our collaboration would be to contact you again for my future similar needs (if that one is a success, there will be more).<br /><br /><b>Budget</b>: $60
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; Lead Generation
+<br /><b>Country</b>: France
+<br /><a href="https://www.upwork.com/jobs/LinkedIn-lead-sourcing-French-basics-required_%7E01c0eefe62cc833899?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 09:43:02 +0000</pubDate><guid>https://www.upwork.com/jobs/LinkedIn-lead-sourcing-French-basics-required_%7E01c0eefe62cc833899?source=rss</guid></item><item><title><![CDATA[Email seed list - Upwork]]></title><link>https://www.upwork.com/jobs/Email-seed-list_%7E0153005a336bfac35c?source=rss</link><description><![CDATA[Hi,<br /><br />
+I am looking for Group of individual who own 2000-5000 gmail &amp;amp;&nbsp;&nbsp;Yahoo.com email id.<br /><br />
+We sent some emails on daily basis . All you can do is to open &amp;amp; Click on that email on daily.<br /><br />
+you will get some 50-80 emails on daily basis .<br /><br />
+Payment will be on monthly basis.<br /><br />
+payment will only be made if at least 80- 90 % email open on daily basis.<br /><br />
+No Corporate id is entertained. only Gmail.com, yahoo.co.uk, <br />
+ymail.com,yahoo.in,yahoo.co.in,yahoo.com<br /><br /><br />
+Please share how you can achieve this task. <br /><br />
+We prefer Gmail id &amp;amp; Yahoo Id to be opened within India Geo. And Individual / Freelancer from India will prefer as this is a Month on Month Project.<br /><br />
+No VPN. Only India geo Registered Gmail &amp;amp; Yahoo Id is allowed for this tasked.<br /><br />
+Ping me on skype for quick revert<br /><br />
+manish.mady<br /><br /><b>Budget</b>: $100
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; Email &amp; Marketing Automation
+<br /><b>Country</b>: India
+<br /><a href="https://www.upwork.com/jobs/Email-seed-list_%7E0153005a336bfac35c?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Hi,<br /><br />
+I am looking for Group of individual who own 2000-5000 gmail &amp;amp;&nbsp;&nbsp;Yahoo.com email id.<br /><br />
+We sent some emails on daily basis . All you can do is to open &amp;amp; Click on that email on daily.<br /><br />
+you will get some 50-80 emails on daily basis .<br /><br />
+Payment will be on monthly basis.<br /><br />
+payment will only be made if at least 80- 90 % email open on daily basis.<br /><br />
+No Corporate id is entertained. only Gmail.com, yahoo.co.uk, <br />
+ymail.com,yahoo.in,yahoo.co.in,yahoo.com<br /><br /><br />
+Please share how you can achieve this task. <br /><br />
+We prefer Gmail id &amp;amp; Yahoo Id to be opened within India Geo. And Individual / Freelancer from India will prefer as this is a Month on Month Project.<br /><br />
+No VPN. Only India geo Registered Gmail &amp;amp; Yahoo Id is allowed for this tasked.<br /><br />
+Ping me on skype for quick revert<br /><br />
+manish.mady<br /><br /><b>Budget</b>: $100
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; Email &amp; Marketing Automation
+<br /><b>Country</b>: India
+<br /><a href="https://www.upwork.com/jobs/Email-seed-list_%7E0153005a336bfac35c?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 09:24:36 +0000</pubDate><guid>https://www.upwork.com/jobs/Email-seed-list_%7E0153005a336bfac35c?source=rss</guid></item><item><title><![CDATA[SEO Outreach Assistant Needed for Melbourne Agency - Upwork]]></title><link>https://www.upwork.com/jobs/SEO-Outreach-Assistant-Needed-for-Melbourne-Agency_%7E01e2dc3ded6de5d12f?source=rss</link><description><![CDATA[We are a search marketing agency (SEO / SEM) based in Melbourne, Australia, and we&#039;re looking for a reliable SEO freelancer to help us with some outreach and linkbuilding tasks on an ongoing project basis (we will have regular work that needs to be delivered ad hoc).<br /><br />
+Some of the tasks include:<br /><br />
+* Backlink opportunity prospecting<br />
+* SERP scraping and analysis<br />
+* Updating link prospect spreadsheets<br />
+* Occasional manual outreach<br />
+* More...<br /><br />
+We are looking for someone who is reliable, used to working with and delivering for agencies, has a proven track record of success, and with ideally a few years&#039; experience in SEO and more specifically, linkbuilding, under their belt.<br /><br />
+The ideal candidate will be someone with all of the above, who is looking to forge a solid, ongoing relationship with an agency built on trust and consistency.<br /><br />
+You will be working on campaigns for some of the biggest brands in Australia across industries such as travel, retail, and real estate.<br /><br />
+Overseas applicants more than welcome to apply.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; SEO - Search Engine Optimization
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/SEO-Outreach-Assistant-Needed-for-Melbourne-Agency_%7E01e2dc3ded6de5d12f?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[We are a search marketing agency (SEO / SEM) based in Melbourne, Australia, and we&#039;re looking for a reliable SEO freelancer to help us with some outreach and linkbuilding tasks on an ongoing project basis (we will have regular work that needs to be delivered ad hoc).<br /><br />
+Some of the tasks include:<br /><br />
+* Backlink opportunity prospecting<br />
+* SERP scraping and analysis<br />
+* Updating link prospect spreadsheets<br />
+* Occasional manual outreach<br />
+* More...<br /><br />
+We are looking for someone who is reliable, used to working with and delivering for agencies, has a proven track record of success, and with ideally a few years&#039; experience in SEO and more specifically, linkbuilding, under their belt.<br /><br />
+The ideal candidate will be someone with all of the above, who is looking to forge a solid, ongoing relationship with an agency built on trust and consistency.<br /><br />
+You will be working on campaigns for some of the biggest brands in Australia across industries such as travel, retail, and real estate.<br /><br />
+Overseas applicants more than welcome to apply.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; SEO - Search Engine Optimization
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/SEO-Outreach-Assistant-Needed-for-Melbourne-Agency_%7E01e2dc3ded6de5d12f?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 08:59:00 +0000</pubDate><guid>https://www.upwork.com/jobs/SEO-Outreach-Assistant-Needed-for-Melbourne-Agency_%7E01e2dc3ded6de5d12f?source=rss</guid></item><item><title><![CDATA[OCR Images and Bulk Conversion to Searchable PDF - Upwork]]></title><link>https://www.upwork.com/jobs/OCR-Images-and-Bulk-Conversion-Searchable-PDF_%7E0122681531d09dee65?source=rss</link><description><![CDATA[A non-profit organisation is seeking quotes for the conversion of more than 16 million USPTO patent image files (e.g. TIFF, PNG, image PDF files) into searchable PDF files, which will be made freely available as a public-good. We are seeking bids and sample conversions for this job.<br /><br />
+The converted PDF files should be PDF/A-2u ISO standard (https://www.iso.org/standard/50655.html) compliant at a minimum (see the EPO patent PDF/A file format for an example of our minimum acceptable standard: https://www.epo.org/searching-for-patents/technical/publication-server/help.html#a6), and preferably PDF/A-3 (https://www.iso.org/standard/57229.html). Files should include scalable fonts and inline figures accurately placed.<br /><br />
+Additionally, full text data from the PDF is available in XML format for a subset of 9 million patents which can be embedded into the PDF where available (see: https://www.uspto.gov/learning-and-resources/xml-resources), and can be quoted separately.<br /><br />
+Extraction of separate image files (PNG files preferred) for each of the figures within the PDF files, tagged with the figure number and caption text, is also desirable and can also be quoted separately. <br /><br />
+An example of patent images files (one for each page), the image PDF file from USPTO and an example of the desired searchable PDF/A format are attached (see the USPTO link here: http://patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;amp;Sect2=HITOFF&amp;amp;p=1&amp;amp;u=/netahtml/PTO/search-bool.html&amp;amp;r=1&amp;amp;f=G&amp;amp;l=50&amp;amp;d=PALL&amp;amp;RefSrch=yes&amp;amp;Query=PN/10415778). An example of a PDF/A format file from the EPO for the same patent family is also provided as an example of the minimum acceptable PDF format. Additional examples can be accessed from the USPTO full text and image databases (see: https://www.uspto.gov/patents-application-process/search-patents).<br /><br />
+Further work may also be available to the successful contractor to assist with additional PDF file conversions for patents from other jurisdictions and policy, legal and regulatory documents.<br /><br /><b>Budget</b>: $3,000
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/OCR-Images-and-Bulk-Conversion-Searchable-PDF_%7E0122681531d09dee65?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[A non-profit organisation is seeking quotes for the conversion of more than 16 million USPTO patent image files (e.g. TIFF, PNG, image PDF files) into searchable PDF files, which will be made freely available as a public-good. We are seeking bids and sample conversions for this job.<br /><br />
+The converted PDF files should be PDF/A-2u ISO standard (https://www.iso.org/standard/50655.html) compliant at a minimum (see the EPO patent PDF/A file format for an example of our minimum acceptable standard: https://www.epo.org/searching-for-patents/technical/publication-server/help.html#a6), and preferably PDF/A-3 (https://www.iso.org/standard/57229.html). Files should include scalable fonts and inline figures accurately placed.<br /><br />
+Additionally, full text data from the PDF is available in XML format for a subset of 9 million patents which can be embedded into the PDF where available (see: https://www.uspto.gov/learning-and-resources/xml-resources), and can be quoted separately.<br /><br />
+Extraction of separate image files (PNG files preferred) for each of the figures within the PDF files, tagged with the figure number and caption text, is also desirable and can also be quoted separately. <br /><br />
+An example of patent images files (one for each page), the image PDF file from USPTO and an example of the desired searchable PDF/A format are attached (see the USPTO link here: http://patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;amp;Sect2=HITOFF&amp;amp;p=1&amp;amp;u=/netahtml/PTO/search-bool.html&amp;amp;r=1&amp;amp;f=G&amp;amp;l=50&amp;amp;d=PALL&amp;amp;RefSrch=yes&amp;amp;Query=PN/10415778). An example of a PDF/A format file from the EPO for the same patent family is also provided as an example of the minimum acceptable PDF format. Additional examples can be accessed from the USPTO full text and image databases (see: https://www.uspto.gov/patents-application-process/search-patents).<br /><br />
+Further work may also be available to the successful contractor to assist with additional PDF file conversions for patents from other jurisdictions and policy, legal and regulatory documents.<br /><br /><b>Budget</b>: $3,000
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/OCR-Images-and-Bulk-Conversion-Searchable-PDF_%7E0122681531d09dee65?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 08:50:41 +0000</pubDate><guid>https://www.upwork.com/jobs/OCR-Images-and-Bulk-Conversion-Searchable-PDF_%7E0122681531d09dee65?source=rss</guid></item><item><title><![CDATA[Looking for a VA for product research - Upwork]]></title><link>https://www.upwork.com/jobs/Looking-for-for-product-research_%7E01120f291bb1513296?source=rss</link><description><![CDATA[Looking for a VA to perform ecommerce product research. Must have access to research tools such as adset, Adplexity<br />
+Adspy, Pexda etc. Must have experience in research winning products.<br /><br />
+This job was posted from a mobile device, so please pardon any typos or any missing details.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Admin Support &gt; Web Research
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/Looking-for-for-product-research_%7E01120f291bb1513296?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Looking for a VA to perform ecommerce product research. Must have access to research tools such as adset, Adplexity<br />
+Adspy, Pexda etc. Must have experience in research winning products.<br /><br />
+This job was posted from a mobile device, so please pardon any typos or any missing details.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Admin Support &gt; Web Research
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/Looking-for-for-product-research_%7E01120f291bb1513296?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 08:39:24 +0000</pubDate><guid>https://www.upwork.com/jobs/Looking-for-for-product-research_%7E01120f291bb1513296?source=rss</guid></item><item><title><![CDATA[List builder to create a list of companies in Malaysia - Upwork]]></title><link>https://www.upwork.com/jobs/List-builder-create-list-companies-Malaysia_%7E015d099dc027033429?source=rss</link><description><![CDATA[I am looking for this -<br />
+- List of Small &amp;amp; Medium companies in Kuala Lumpur (250 companies)<br />
+- They should be selling consumer products to end-users (not other companies), what&#039;s referred to as B2C.<br />
+- These would be traditional businesses who do not have an eCommerce presence<br />
+- Their revenue should be above 1 Million Ringgit ($250K) and not more than 10 Million Ringgit ($2.5 Million)<br />
+- They should be head-quartered in Kuala Lumpur<br />
+- The list should cover the following data (sample format enclosed)<br />
+1. Name of the company<br />
+2. Revenue (approximate)<br />
+3. Products sold<br />
+4. Website address (if available)<br />
+5. Name of Owner (Proprietor / Director)<br />
+6. Phone number of Owner<br />
+7. Email ID of Owner<br />
+7. Secondary contact (Senior Manager)<br />
+8. Phone number of Secondary contact<br />
+9. Email ID of Secondary contact<br />
+10. Company Address<br />
+11. Any remarks<br /><br />
+There will be random validation done on companies in the list before the release of payment.<br /><br /><b>Budget</b>: $30
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; Market &amp; Customer Research
+<br /><b>Country</b>: India
+<br /><a href="https://www.upwork.com/jobs/List-builder-create-list-companies-Malaysia_%7E015d099dc027033429?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[I am looking for this -<br />
+- List of Small &amp;amp; Medium companies in Kuala Lumpur (250 companies)<br />
+- They should be selling consumer products to end-users (not other companies), what&#039;s referred to as B2C.<br />
+- These would be traditional businesses who do not have an eCommerce presence<br />
+- Their revenue should be above 1 Million Ringgit ($250K) and not more than 10 Million Ringgit ($2.5 Million)<br />
+- They should be head-quartered in Kuala Lumpur<br />
+- The list should cover the following data (sample format enclosed)<br />
+1. Name of the company<br />
+2. Revenue (approximate)<br />
+3. Products sold<br />
+4. Website address (if available)<br />
+5. Name of Owner (Proprietor / Director)<br />
+6. Phone number of Owner<br />
+7. Email ID of Owner<br />
+7. Secondary contact (Senior Manager)<br />
+8. Phone number of Secondary contact<br />
+9. Email ID of Secondary contact<br />
+10. Company Address<br />
+11. Any remarks<br /><br />
+There will be random validation done on companies in the list before the release of payment.<br /><br /><b>Budget</b>: $30
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Sales &amp; Marketing &gt; Market &amp; Customer Research
+<br /><b>Country</b>: India
+<br /><a href="https://www.upwork.com/jobs/List-builder-create-list-companies-Malaysia_%7E015d099dc027033429?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 08:27:48 +0000</pubDate><guid>https://www.upwork.com/jobs/List-builder-create-list-companies-Malaysia_%7E015d099dc027033429?source=rss</guid></item><item><title><![CDATA[Internet research -&amp;gt; Privacy scrape task - Upwork]]></title><link>https://www.upwork.com/jobs/Internet-research-Privacy-scrape-task_%7E019c97b66d0ce8e2e9?source=rss</link><description><![CDATA[I need someone to scrape the internet for personal information in order to help maintain privacy.<br />
+Please add THIS IS REAL if you have read this brief<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Admin Support &gt; Web Research
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/Internet-research-Privacy-scrape-task_%7E019c97b66d0ce8e2e9?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[I need someone to scrape the internet for personal information in order to help maintain privacy.<br />
+Please add THIS IS REAL if you have read this brief<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Admin Support &gt; Web Research
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/Internet-research-Privacy-scrape-task_%7E019c97b66d0ce8e2e9?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 08:24:38 +0000</pubDate><guid>https://www.upwork.com/jobs/Internet-research-Privacy-scrape-task_%7E019c97b66d0ce8e2e9?source=rss</guid></item><item><title><![CDATA[Developer for web scraper - car events - Upwork]]></title><link>https://www.upwork.com/jobs/Developer-for-web-scraper-car-events_%7E01b62a6590b6d0fcd9?source=rss</link><description><![CDATA[Seeking an experienced developer to create an intelligent web scraper for collecting car events across the web. The scraper should be able to:<br />
+-Generally search the internet for automotive events (car shows, car meetups, rallies, drives, etc).<br />
+-Ability to search specific websites to collect event information.<br />
+-Check previously collected events and only add newly identified events.<br /><br />
+Required fields to scrape include:<br />
+-event name<br />
+-start datetime<br />
+-end datetime<br />
+-location<br />
+-source URL (site from which event was scraped)<br /><br />
+Additional fields:<br />
+-main photo URL<br />
+-event description<br />
+-contact phone<br />
+-contact email<br />
+-event URL (may be different than source URL)<br /><br />
+Output of the scraper should be in standardized format such as CSV. Integration with Microsoft Excel or Google Sheets would be nice to have. Allow additional custom management fields (event reviewed, status, etc).<br /><br /><b>Budget</b>: $400
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Web Development
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Developer-for-web-scraper-car-events_%7E01b62a6590b6d0fcd9?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Seeking an experienced developer to create an intelligent web scraper for collecting car events across the web. The scraper should be able to:<br />
+-Generally search the internet for automotive events (car shows, car meetups, rallies, drives, etc).<br />
+-Ability to search specific websites to collect event information.<br />
+-Check previously collected events and only add newly identified events.<br /><br />
+Required fields to scrape include:<br />
+-event name<br />
+-start datetime<br />
+-end datetime<br />
+-location<br />
+-source URL (site from which event was scraped)<br /><br />
+Additional fields:<br />
+-main photo URL<br />
+-event description<br />
+-contact phone<br />
+-contact email<br />
+-event URL (may be different than source URL)<br /><br />
+Output of the scraper should be in standardized format such as CSV. Integration with Microsoft Excel or Google Sheets would be nice to have. Allow additional custom management fields (event reviewed, status, etc).<br /><br /><b>Budget</b>: $400
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Web Development
+<br /><b>Country</b>: United States
+<br /><a href="https://www.upwork.com/jobs/Developer-for-web-scraper-car-events_%7E01b62a6590b6d0fcd9?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 07:57:16 +0000</pubDate><guid>https://www.upwork.com/jobs/Developer-for-web-scraper-car-events_%7E01b62a6590b6d0fcd9?source=rss</guid></item><item><title><![CDATA[Scraping - listing de sociétés + numéros de téléphone - Upwork]]></title><link>https://www.upwork.com/jobs/Scraping-listing-soci-num-ros-phone_%7E013a3ca2366214c3fd?source=rss</link><description><![CDATA[Bonjour,<br />
+Dans le cadre d&#039;une &eacute;tude de march&eacute;, nous cherchons &agrave; obtenir les informations suivantes :<br /><br />
+1 - Bodacc<br />
+Sur le Bodacc, la liste des entreprises en France pass&eacute;es en redressement judiciaire depuis le 1er septembre (environ 3000 soci&eacute;t&eacute;s) avec a minima :<br />
+ - raison sociale<br />
+ - adresse/ville<br />
+ - nom du g&eacute;rant<br /><br />
+2 - Enrichissement<br />
+Via les Pages Jaunes (ou tout autre outil &agrave; votre disposition), ajout a minima du num&eacute;ro de t&eacute;l&eacute;phone. Toute autre information de contact (contact du g&eacute;rant, email)<br /><br />
+Livrable :<br />
+Fichier Excel ou GSheet avec les informations list&eacute;es ci-dessus.<br /><br />
+N&#039;h&eacute;sitez pas &agrave; me contacter si le job vous int&eacute;resse.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: France
+<br /><a href="https://www.upwork.com/jobs/Scraping-listing-soci-num-ros-phone_%7E013a3ca2366214c3fd?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Bonjour,<br />
+Dans le cadre d&#039;une &eacute;tude de march&eacute;, nous cherchons &agrave; obtenir les informations suivantes :<br /><br />
+1 - Bodacc<br />
+Sur le Bodacc, la liste des entreprises en France pass&eacute;es en redressement judiciaire depuis le 1er septembre (environ 3000 soci&eacute;t&eacute;s) avec a minima :<br />
+ - raison sociale<br />
+ - adresse/ville<br />
+ - nom du g&eacute;rant<br /><br />
+2 - Enrichissement<br />
+Via les Pages Jaunes (ou tout autre outil &agrave; votre disposition), ajout a minima du num&eacute;ro de t&eacute;l&eacute;phone. Toute autre information de contact (contact du g&eacute;rant, email)<br /><br />
+Livrable :<br />
+Fichier Excel ou GSheet avec les informations list&eacute;es ci-dessus.<br /><br />
+N&#039;h&eacute;sitez pas &agrave; me contacter si le job vous int&eacute;resse.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: France
+<br /><a href="https://www.upwork.com/jobs/Scraping-listing-soci-num-ros-phone_%7E013a3ca2366214c3fd?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 07:53:49 +0000</pubDate><guid>https://www.upwork.com/jobs/Scraping-listing-soci-num-ros-phone_%7E013a3ca2366214c3fd?source=rss</guid></item><item><title><![CDATA[Create web-scraping script to retrieve prices from skyscanner - Upwork]]></title><link>https://www.upwork.com/jobs/Create-web-scraping-script-retrieve-prices-from-skyscanner_%7E016ef6cb198f920947?source=rss</link><description><![CDATA[Hi Upwork<br /><br />
+Looking for an expert web-scraper to take our inputs and retrieve skyscanner prices daily and store % movements<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Scripts &amp; Utilities
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/Create-web-scraping-script-retrieve-prices-from-skyscanner_%7E016ef6cb198f920947?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Hi Upwork<br /><br />
+Looking for an expert web-scraper to take our inputs and retrieve skyscanner prices daily and store % movements<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Scripts &amp; Utilities
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/Create-web-scraping-script-retrieve-prices-from-skyscanner_%7E016ef6cb198f920947?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 07:44:07 +0000</pubDate><guid>https://www.upwork.com/jobs/Create-web-scraping-script-retrieve-prices-from-skyscanner_%7E016ef6cb198f920947?source=rss</guid></item><item><title><![CDATA[Data Entry - Immediate Start - Upwork]]></title><link>https://www.upwork.com/jobs/Data-Entry-Immediate-Start_%7E01a67ed92aa957a49d?source=rss</link><description><![CDATA[Hi Upwork, we have an urgent requirement to fill a data entry role in our team.<br /><br />
+IMMEDIATE START<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Admin Support &gt; Data Entry
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/Data-Entry-Immediate-Start_%7E01a67ed92aa957a49d?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Hi Upwork, we have an urgent requirement to fill a data entry role in our team.<br /><br />
+IMMEDIATE START<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Admin Support &gt; Data Entry
+<br /><b>Country</b>: Australia
+<br /><a href="https://www.upwork.com/jobs/Data-Entry-Immediate-Start_%7E01a67ed92aa957a49d?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 07:35:57 +0000</pubDate><guid>https://www.upwork.com/jobs/Data-Entry-Immediate-Start_%7E01a67ed92aa957a49d?source=rss</guid></item><item><title><![CDATA[cookieScraper - Upwork]]></title><link>https://www.upwork.com/jobs/cookieScraper_%7E017103313ad4cbf069?source=rss</link><description><![CDATA[Cookiescraper<br /><br />
+*We already built 80%* Right now we are looking for the most experienced developer who can help us out with the cookie scraper and setup some final elements.<br /><br />
+We are looking for an experience backend developer with strong knowledge in node.js and proven ability in building a stabile webscraper.<br /><br />
+We are building an all-in-one solution to create a cookie notification. The user is able to:<br /><br />
+1.	Sign up <br />
+2.	Fill in their website<br />
+3.	We scrape the website and find all the cookies<br />
+4.	We match the cookies with our database and categorize them<br />
+5.	User is able to style their own notification<br />
+6.	They copy/pase a scripttag in their heading<br />
+7.	We control the cookies based on their visitors input<br /><br />
+On request we can give you access to the demo environment. <br /><br />
+I attached a video about the scraping concept.<br /><br />
+Freelancer is willing to work:<br /><br />
+--&amp;gt; at least 24h a week<br />
+--&amp;gt; weekly stand-up via video call<br />
+--&amp;gt; work with Slack, Git and Trello <br />
+--&amp;gt; good in English<br /><br />
+We are in Europe, Netherlands, Eindhoven<br />
+(possible to work in our office)<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Web Development
+<br /><b>Country</b>: Netherlands
+<br /><a href="https://www.upwork.com/jobs/cookieScraper_%7E017103313ad4cbf069?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Cookiescraper<br /><br />
+*We already built 80%* Right now we are looking for the most experienced developer who can help us out with the cookie scraper and setup some final elements.<br /><br />
+We are looking for an experience backend developer with strong knowledge in node.js and proven ability in building a stabile webscraper.<br /><br />
+We are building an all-in-one solution to create a cookie notification. The user is able to:<br /><br />
+1.	Sign up <br />
+2.	Fill in their website<br />
+3.	We scrape the website and find all the cookies<br />
+4.	We match the cookies with our database and categorize them<br />
+5.	User is able to style their own notification<br />
+6.	They copy/pase a scripttag in their heading<br />
+7.	We control the cookies based on their visitors input<br /><br />
+On request we can give you access to the demo environment. <br /><br />
+I attached a video about the scraping concept.<br /><br />
+Freelancer is willing to work:<br /><br />
+--&amp;gt; at least 24h a week<br />
+--&amp;gt; weekly stand-up via video call<br />
+--&amp;gt; work with Slack, Git and Trello <br />
+--&amp;gt; good in English<br /><br />
+We are in Europe, Netherlands, Eindhoven<br />
+(possible to work in our office)<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Web Development
+<br /><b>Country</b>: Netherlands
+<br /><a href="https://www.upwork.com/jobs/cookieScraper_%7E017103313ad4cbf069?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 07:32:39 +0000</pubDate><guid>https://www.upwork.com/jobs/cookieScraper_%7E017103313ad4cbf069?source=rss</guid></item><item><title><![CDATA[Price Scraping Software - Upwork]]></title><link>https://www.upwork.com/jobs/Price-Scraping-Software_%7E0140a9e0a2e9d34499?source=rss</link><description><![CDATA[Good afternoon,<br /><br />
+Thank you for showing interest in our job. We are looking for someone to create a piece of software for us. The software will be a price scraper. I have attached a word document so you can have a look at what we expect.<br /><br />
+Kind regards, Dan<br /><br /><b>Budget</b>: $40
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Desktop Software Development
+<br /><b>Country</b>: United Kingdom
+<br /><a href="https://www.upwork.com/jobs/Price-Scraping-Software_%7E0140a9e0a2e9d34499?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Good afternoon,<br /><br />
+Thank you for showing interest in our job. We are looking for someone to create a piece of software for us. The software will be a price scraper. I have attached a word document so you can have a look at what we expect.<br /><br />
+Kind regards, Dan<br /><br /><b>Budget</b>: $40
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Desktop Software Development
+<br /><b>Country</b>: United Kingdom
+<br /><a href="https://www.upwork.com/jobs/Price-Scraping-Software_%7E0140a9e0a2e9d34499?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 07:26:57 +0000</pubDate><guid>https://www.upwork.com/jobs/Price-Scraping-Software_%7E0140a9e0a2e9d34499?source=rss</guid></item><item><title><![CDATA[Shopify Product Scraping tool - Upwork]]></title><link>https://www.upwork.com/jobs/Shopify-Product-Scraping-tool_%7E013e22829f8bb756ef?source=rss</link><description><![CDATA[Job requirement : <br /><br />
+Should be able to develop a tool by which I can scrape products off of any shopify website . The tool should be able to scrape products with description , images , gifs , videos and any other form of content and must produce output as a CSV file. The CSV file should be compatible with shopify for uploading it on the website.<br /><br /><b>Budget</b>: $300
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: India
+<br /><a href="https://www.upwork.com/jobs/Shopify-Product-Scraping-tool_%7E013e22829f8bb756ef?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Job requirement : <br /><br />
+Should be able to develop a tool by which I can scrape products off of any shopify website . The tool should be able to scrape products with description , images , gifs , videos and any other form of content and must produce output as a CSV file. The CSV file should be compatible with shopify for uploading it on the website.<br /><br /><b>Budget</b>: $300
+<br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Extraction / ETL
+<br /><b>Country</b>: India
+<br /><a href="https://www.upwork.com/jobs/Shopify-Product-Scraping-tool_%7E013e22829f8bb756ef?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 07:25:50 +0000</pubDate><guid>https://www.upwork.com/jobs/Shopify-Product-Scraping-tool_%7E013e22829f8bb756ef?source=rss</guid></item><item><title><![CDATA[Full Stack Developer needed with NodeJS expertise to build a Crawler - Upwork]]></title><link>https://www.upwork.com/jobs/Full-Stack-Developer-needed-with-NodeJS-expertise-build-Crawler_%7E0108f432d146df7f5b?source=rss</link><description><![CDATA[Looking for a developer to build a NodeJS application to test various website performance, security, SEO metrics regularly. The test would be done on a million sites and all data should be exposed using API to visualize the data.<br /><br />
+On the front-end, I can use WordPress. But, you got to develop a WP Plugin that fetches the data to visualize in charts and graphs.<br /><br />
+You should be good at the following.<br /><br />
+NodeJS<br />
+Database (PostgreSQL?)<br />
+Building API<br />
+WordPress plugin development<br />
+Data visualization<br />
+Building crawler<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Web Development
+<br /><b>Country</b>: United Kingdom
+<br /><a href="https://www.upwork.com/jobs/Full-Stack-Developer-needed-with-NodeJS-expertise-build-Crawler_%7E0108f432d146df7f5b?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Looking for a developer to build a NodeJS application to test various website performance, security, SEO metrics regularly. The test would be done on a million sites and all data should be exposed using API to visualize the data.<br /><br />
+On the front-end, I can use WordPress. But, you got to develop a WP Plugin that fetches the data to visualize in charts and graphs.<br /><br />
+You should be good at the following.<br /><br />
+NodeJS<br />
+Database (PostgreSQL?)<br />
+Building API<br />
+WordPress plugin development<br />
+Data visualization<br />
+Building crawler<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Web, Mobile &amp; Software Dev &gt; Web Development
+<br /><b>Country</b>: United Kingdom
+<br /><a href="https://www.upwork.com/jobs/Full-Stack-Developer-needed-with-NodeJS-expertise-build-Crawler_%7E0108f432d146df7f5b?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 06:58:18 +0000</pubDate><guid>https://www.upwork.com/jobs/Full-Stack-Developer-needed-with-NodeJS-expertise-build-Crawler_%7E0108f432d146df7f5b?source=rss</guid></item><item><title><![CDATA[Algorithm Trading Infrastructure Quiz - Upwork]]></title><link>https://www.upwork.com/jobs/Algorithm-Trading-Infrastructure-Quiz_%7E01883063c2fc0b54ea?source=rss</link><description><![CDATA[Please avoid using data manipulation libraries like NumPy, Pandas etc. We want to see how you solve the<br />
+problem.<br /><br /><br />
+Problem 1: Drawdown<br />
+Outline<br />
+Given an array of NAVs (prices), calculate and return the magnitude of the n-largest drawdowns.<br />
+A drawdown is the peak-to-trough decline of the NAV during a specific recorded period of an investment, measured from the time a retrenchment begins to when the NAV reaches a new high. This drawdown method of recording is useful because a valley can&#039;t be measured until a new high occurs. Once the investment reaches a new high, the tracker records change from the old high to the lowest trough.<br />
+Drawdowns help determine one measure of an investment&#039;s financial risk. Function description<br />
+Write a function find_drawdowns, that takes two parameters:<br />
+1. nav : an array of integers representing the end of day price of a specific investment<br />
+2. n: an integer representing the maximum number of drawdowns to return<br />
+Output Format<br />
+Return a sorted array of integers, largest to smallest, that are the magnitudes of the n-largest drawdowns.<br />
+Examples<br />
+print find_drawdown([3,2,1,5,2,7,3,10], 2)<br />
+[4, 3]<br />
+print find_drawdown([1,2,3,4,5,4,3,4,3,4,5,6,7,4,3,6,2,10], 4)<br />
+[5, 2]<br />
+print find_drawdown([1,2,3,4,5,7], 3)<br />
+[]<br />
+Bonus<br />
+Modify the function to have the find_drawdownsfunction return the drawdown start index, end index, duration and recovery time in addition to the n largest drawdowns.<br /><br /><br />
+Problem 2: Data Broadcaster<br />
+Outline<br />
+Write a python script that reads ordered time series data from 2 csv files and then rebroadcasts the data from both files in correct time order. Correct time order meaning the elapsed time between messages being broadcast equals the elapsed time between the timestamps on the data.<br />
+The script should also be able to control the &lsquo;speed&rsquo; of the rebroadcast to be faster or slower than real time and it should be fixed at startup time.<br />
+The script should push the data to a ZeroMQ publisher at the appropriate time, your choice as to how you encode the data. Please use the Python ZMQ library.<br /><br />
+Inputs<br />
+Two files consisting of:<br />
+1. Periodic snapshots of the BTC-USD orderbook on a particular day at a particular exchange<br />
+2. Every executed trade for the BTC-USD pair on the same day and exchange<br />
+Both files are formatted as CSVs, with a header row and each line afterwards represents a snapshot of data that should be broadcast at the time identified. There are three times identified in the files (qs_send_time, recorder_recv_time, exch_time) and you should be able to configure which is used to time the broadcasts.<br />
+All timestamps are in Unix time in milliseconds.<br />
+You can download the two files here: BTC-USD.book BTC-USD.trade<br />
+Output<br />
+Each row of data, from either source file, should be pushed to a ZeroMQ publisher at the appropriate time.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Mining &amp; Management
+<br /><b>Country</b>: Japan
+<br /><a href="https://www.upwork.com/jobs/Algorithm-Trading-Infrastructure-Quiz_%7E01883063c2fc0b54ea?source=rss">click to apply</a>
+]]></description><content:encoded><![CDATA[Please avoid using data manipulation libraries like NumPy, Pandas etc. We want to see how you solve the<br />
+problem.<br /><br /><br />
+Problem 1: Drawdown<br />
+Outline<br />
+Given an array of NAVs (prices), calculate and return the magnitude of the n-largest drawdowns.<br />
+A drawdown is the peak-to-trough decline of the NAV during a specific recorded period of an investment, measured from the time a retrenchment begins to when the NAV reaches a new high. This drawdown method of recording is useful because a valley can&#039;t be measured until a new high occurs. Once the investment reaches a new high, the tracker records change from the old high to the lowest trough.<br />
+Drawdowns help determine one measure of an investment&#039;s financial risk. Function description<br />
+Write a function find_drawdowns, that takes two parameters:<br />
+1. nav : an array of integers representing the end of day price of a specific investment<br />
+2. n: an integer representing the maximum number of drawdowns to return<br />
+Output Format<br />
+Return a sorted array of integers, largest to smallest, that are the magnitudes of the n-largest drawdowns.<br />
+Examples<br />
+print find_drawdown([3,2,1,5,2,7,3,10], 2)<br />
+[4, 3]<br />
+print find_drawdown([1,2,3,4,5,4,3,4,3,4,5,6,7,4,3,6,2,10], 4)<br />
+[5, 2]<br />
+print find_drawdown([1,2,3,4,5,7], 3)<br />
+[]<br />
+Bonus<br />
+Modify the function to have the find_drawdownsfunction return the drawdown start index, end index, duration and recovery time in addition to the n largest drawdowns.<br /><br /><br />
+Problem 2: Data Broadcaster<br />
+Outline<br />
+Write a python script that reads ordered time series data from 2 csv files and then rebroadcasts the data from both files in correct time order. Correct time order meaning the elapsed time between messages being broadcast equals the elapsed time between the timestamps on the data.<br />
+The script should also be able to control the &lsquo;speed&rsquo; of the rebroadcast to be faster or slower than real time and it should be fixed at startup time.<br />
+The script should push the data to a ZeroMQ publisher at the appropriate time, your choice as to how you encode the data. Please use the Python ZMQ library.<br /><br />
+Inputs<br />
+Two files consisting of:<br />
+1. Periodic snapshots of the BTC-USD orderbook on a particular day at a particular exchange<br />
+2. Every executed trade for the BTC-USD pair on the same day and exchange<br />
+Both files are formatted as CSVs, with a header row and each line afterwards represents a snapshot of data that should be broadcast at the time identified. There are three times identified in the files (qs_send_time, recorder_recv_time, exch_time) and you should be able to configure which is used to time the broadcasts.<br />
+All timestamps are in Unix time in milliseconds.<br />
+You can download the two files here: BTC-USD.book BTC-USD.trade<br />
+Output<br />
+Each row of data, from either source file, should be pushed to a ZeroMQ publisher at the appropriate time.<br /><br /><br /><b>Posted On</b>: October 11, 2019 13:24 UTC<br /><b>Category</b>: Data Science &amp; Analytics &gt; Data Mining &amp; Management
+<br /><b>Country</b>: Japan
+<br /><a href="https://www.upwork.com/jobs/Algorithm-Trading-Infrastructure-Quiz_%7E01883063c2fc0b54ea?source=rss">click to apply</a>
+]]></content:encoded><pubDate>Fri, 11 Oct 2019 06:54:07 +0000</pubDate><guid>https://www.upwork.com/jobs/Algorithm-Trading-Infrastructure-Quiz_%7E01883063c2fc0b54ea?source=rss</guid></item></channel></rss>

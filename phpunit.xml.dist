@@ -1,0 +1,26 @@
+<phpunit
+        bootstrap="vendor/autoload.php"
+        colors="true"
+        processIsolation="true"
+        backupGlobals="false"
+>
+    <php>
+<!--        <const name="VAR_132" value="132"/>-->
+    </php>
+    <testsuites>
+        <testsuite name="fl_ru">
+            <file>tests/Feed/FlRuFeedTest.php</file>
+        </testsuite>
+        <testsuite name="upwork_com">
+            <file>tests/Feed/UpworkComTest.php</file>
+        </testsuite>
+        <testsuite name="checker">
+            <directory>tests/Checker</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+</phpunit>

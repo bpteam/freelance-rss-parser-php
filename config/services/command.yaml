@@ -1,0 +1,83 @@
+parameters:
+  env(FEED_UPWORK_RSS_SCRAPING): ''
+  env(FEED_UPWORK_RSS_DATA_EXTRACTION): ''
+  env(FEED_UPWORK_RSS_WEB_SCRAPING): ''
+  env(FEED_UPWORK_RSS_WEB_RESEARCH): ''
+  env(FEED_UPWORK_RSS_WEB_CRAWLER): ''
+  env(FEED_FLRU_RSS_SCRAPING): ''
+  env(TELEGRAM_BOT_FREELANCE_SCRAPER): ''
+
+  upwork_rss_feed_scraping: '%env(FEED_UPWORK_RSS_SCRAPING)%'
+  upwork_rss_feed_data_extraction: '%env(FEED_UPWORK_RSS_DATA_EXTRACTION)%'
+  upwork_rss_feed_web_scraping: '%env(FEED_UPWORK_RSS_WEB_SCRAPING)%'
+  upwork_rss_feed_web_research: '%env(FEED_UPWORK_RSS_WEB_RESEARCH)%'
+  upwork_rss_feed_web_crawler: '%env(FEED_UPWORK_RSS_WEB_CRAWLER)%'
+  flru_rss_feed_scraping: '%env(FEED_FLRU_RSS_SCRAPING)%'
+  telegram_bot_key_freelance_scraper: '%env(TELEGRAM_BOT_FREELANCE_SCRAPER)%'
+
+services:
+
+  app.command.upwork_rss_reader:
+    abstract: true
+    class: Freelance\Command\CheckFeedCommand
+    arguments:
+      $doctrine: '@doctrine'
+      $checker: '@app.checker.keywords.upwork_com'
+      $logger: '@logger'
+      $feed: '@app.feed.upwork_com'
+      $sleepSeconds: 180
+
+  app.command.upwork_rss_reader_scraping:
+    parent: 'app.command.upwork_rss_reader'
+    arguments:
+      $feedUrl: '%upwork_rss_feed_scraping%'
+    tags:
+      - { name: 'console.command', command: 'app:upwork_rss_reader_scraping' }
+
+  app.command.upwork_rss_reader_data_extraction:
+    parent: 'app.command.upwork_rss_reader'
+    arguments:
+      $feedUrl: '%upwork_rss_feed_data_extraction%'
+    tags:
+      - { name: 'console.command', command: 'app:upwork_rss_reader_data_extraction' }
+
+  app.command.upwork_rss_reader_web_scraping:
+    parent: 'app.command.upwork_rss_reader'
+    arguments:
+      $feedUrl: '%upwork_rss_feed_web_scraping%'
+    tags:
+      - { name: 'console.command', command: 'app:upwork_rss_reader_web_scraping' }
+
+  app.command.upwork_rss_reader_web_research:
+    parent: 'app.command.upwork_rss_reader'
+    arguments:
+      $feedUrl: '%upwork_rss_feed_web_research%'
+    tags:
+      - { name: 'console.command', command: 'app:upwork_rss_reader_web_research' }
+
+  app.command.upwork_rss_reader_web_crawler:
+    parent: 'app.command.upwork_rss_reader'
+    arguments:
+      $feedUrl: '%upwork_rss_feed_web_crawler%'
+    tags:
+      - { name: 'console.command', command: 'app:upwork_rss_reader_web_crawler' }
+
+  app.command.flru_rss_reader_scraping:
+    class: Freelance\Command\CheckFeedCommand
+    arguments:
+      $doctrine: '@doctrine'
+      $checker: '@app.checker.keywords.fl_ru'
+      $logger: '@logger'
+      $feed: '@app.feed.fl_ru'
+      $feedUrl: '%flru_rss_feed_scraping%'
+    tags:
+      - { name: 'console.command', command: 'app:flru_rss_reader_scraping' }
+
+  app.command.notifier_telegram:
+    class: Freelance\Command\NotifierCommand
+    arguments:
+      $doctrine: '@doctrine'
+      $notifier: '@app.notifier.telegram'
+      $logger: '@logger'
+    tags:
+      - { name: 'console.command', command: 'app:notifier_telegram' }

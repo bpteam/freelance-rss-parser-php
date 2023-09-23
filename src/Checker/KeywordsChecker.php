@@ -3,7 +3,6 @@
 namespace Freelance\Checker;
 
 use Freelance\Entity\Job;
-use InvalidArgumentException;
 
 class KeywordsChecker implements CheckerInterface
 {
@@ -19,10 +18,6 @@ class KeywordsChecker implements CheckerInterface
             ) .
             ')~imsu'
         ;
-
-        if (preg_match($this->regexp, '') === false) {
-            new InvalidArgumentException('Bad regexp pattern: '. $this->regexp);
-        }
     }
 
     public function isHit(Job $job): bool

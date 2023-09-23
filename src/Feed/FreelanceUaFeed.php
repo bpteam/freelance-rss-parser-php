@@ -9,12 +9,12 @@ use Freelance\Collection\JobCollectionInterface;
 use Freelance\Entity\Job;
 use Freelance\Loader\LoaderInterface;
 
-class UpworkComFeed implements FeedInterface
+class FreelanceUaFeed implements FeedInterface
 {
     /**
      * @var LoaderInterface
      */
-    private $loader;
+    private LoaderInterface $loader;
 
     /**
      * FlRuFeed constructor.
@@ -27,7 +27,7 @@ class UpworkComFeed implements FeedInterface
 
     public function getFeedUrl(): string
     {
-        return 'https://www.upwork.com/ab/feed/topics/rss?securityToken=f9b6f39073e9e85fa9160a1b900401d604ec1c664177a78d37aed30e8ff55de55465a1bb030912af366986ed2728f0b58582767d173c7d9e6201c990587bf1f4&userUid=1182274724678107136&orgUid=1182274724707467265&topic=4481918&t='.time();
+        return 'https://freelance.ua/orders/rss?cat_id=0&sub_id=0&t='.time();
     }
 
     /**
@@ -42,7 +42,7 @@ class UpworkComFeed implements FeedInterface
             foreach ($matches['item'] as $item) {
                 $job = new Job();
                 $options = [];
-                if (preg_match('~<title><!\[CDATA\[(?<title>.*)\]\]></title>~imsuU', $item, $match)) {
+                if (preg_match('~<title>(?<title>.*)</title>~imsuU', $item, $match)) {
                     $job->setTitle($match['title']);
                 } else {
                     $job->setTitle('');
@@ -54,13 +54,13 @@ class UpworkComFeed implements FeedInterface
                     $job->setUrl('');
                 }
 
-                if (preg_match('~<description><!\[CDATA\[(?<description>.*)\]\]></description>~imsuU', $item, $match)) {
+                if (preg_match('~<description>(?<description>.*)</description>~imsuU', $item, $match)) {
                     $job->setDescription($match['description']);
                 } else {
                     $job->setDescription('');
                 }
 
-                if (preg_match('~<b>Budget</b>:\s*(?<price>.*)\s*<br\s*/>~imsuU', $item, $match)) {
+                if (preg_match('~Budget:\s*(?<price>[^,]*),~imsuU', $item, $match)) {
                     $options['price'] = $match['price'];
                 }
 

@@ -5,5 +5,6 @@ use Freelance\Collection\JobCollectionInterface;
 
 interface FeedInterface
 {
-    public function get(string $url): JobCollectionInterface;
+    public function get(): JobCollectionInterface;
+    public function getFeedUrl(): string;
 }

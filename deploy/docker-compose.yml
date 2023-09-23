@@ -1,0 +1,37 @@
+version: '2.4'
+services:
+  app:
+    build:
+      context: ../
+      dockerfile: deploy/Dockerfile
+    restart: on-failure
+    image: freelance-rss-parser
+    volumes:
+      - ../:/app
+    environment:
+      VERSON: dev
+      APP_NAME: freelance-rss-parser
+      APP_ENV: dev
+      APP_DEBUG: 1
+      STORAGE_HOST: database
+      STORAGE_PORT: 5432
+      STORAGE_USER: freelance_rss_parser
+      STORAGE_PASS: freelance_rss_parser
+      STORAGE_DB: freelance_rss_parser
+    depends_on:
+      - database
+
+  database:
+    image: postgres:15.1-alpine3.16
+    environment:
+      POSTGRES_USER: freelance_rss_parser
+      POSTGRES_PASSWORD: freelance_rss_parser
+      POSTGRES_DB: freelance_rss_parser
+    volumes:
+      - freelance_rss_parser:/var/lib/postgresql/data
+      - /tmp/backup:/tmp/backup
+    ports:
+      - "5432:5432"
+
+volumes:
+  freelance_rss_parser:

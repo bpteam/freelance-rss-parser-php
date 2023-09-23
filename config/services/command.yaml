@@ -1,82 +1,68 @@
-parameters:
-  env(FEED_UPWORK_RSS_SCRAPING): ''
-  env(FEED_UPWORK_RSS_DATA_EXTRACTION): ''
-  env(FEED_UPWORK_RSS_WEB_SCRAPING): ''
-  env(FEED_UPWORK_RSS_WEB_RESEARCH): ''
-  env(FEED_UPWORK_RSS_WEB_CRAWLER): ''
-  env(FEED_FLRU_RSS_SCRAPING): ''
-  env(TELEGRAM_BOT_FREELANCE_SCRAPER): ''
-
-  upwork_rss_feed_scraping: '%env(FEED_UPWORK_RSS_SCRAPING)%'
-  upwork_rss_feed_data_extraction: '%env(FEED_UPWORK_RSS_DATA_EXTRACTION)%'
-  upwork_rss_feed_web_scraping: '%env(FEED_UPWORK_RSS_WEB_SCRAPING)%'
-  upwork_rss_feed_web_research: '%env(FEED_UPWORK_RSS_WEB_RESEARCH)%'
-  upwork_rss_feed_web_crawler: '%env(FEED_UPWORK_RSS_WEB_CRAWLER)%'
-  flru_rss_feed_scraping: '%env(FEED_FLRU_RSS_SCRAPING)%'
-  telegram_bot_key_freelance_scraper: '%env(TELEGRAM_BOT_FREELANCE_SCRAPER)%'
-
 services:
 
-  app.command.upwork_rss_reader:
+
+  app.command.download_src:
+    class: Freelance\Command\DownloadSrcCommand
+    arguments:
+      $loader: '@app.loader'
+    tags:
+      - { name: 'console.command', command: 'app:download-src' }
+
+
+  app.command.scrapper_base:
     abstract: true
     class: Freelance\Command\CheckFeedCommand
     arguments:
-      $doctrine: '@doctrine'
-      $checker: '@app.checker.keywords.upwork_com'
-      $logger: '@logger'
-      $feed: '@app.feed.upwork_com'
-      $sleepSeconds: 180
+      $jobRepository: '@Freelance\Repository\JobRepository'
+      $checker: '@app.checker.keywords.common'
 
   app.command.upwork_rss_reader_scraping:
-    parent: 'app.command.upwork_rss_reader'
+    parent: 'app.command.scrapper_base'
     arguments:
-      $feedUrl: '%upwork_rss_feed_scraping%'
+      $feed: '@app.feed.upwork_com'
     tags:
       - { name: 'console.command', command: 'app:upwork_rss_reader_scraping' }
 
-  app.command.upwork_rss_reader_data_extraction:
-    parent: 'app.command.upwork_rss_reader'
+  app.command.free_lance_ua_page_scraping:
+    parent: 'app.command.scrapper_base'
     arguments:
-      $feedUrl: '%upwork_rss_feed_data_extraction%'
+      $feed: '@app.feed.free_lance_ua'
     tags:
-      - { name: 'console.command', command: 'app:upwork_rss_reader_data_extraction' }
+      - { name: 'console.command', command: 'app:free_lance_ua_scraping' }
 
-  app.command.upwork_rss_reader_web_scraping:
-    parent: 'app.command.upwork_rss_reader'
+  app.command.freelance_com_feed_scraping:
+    parent: 'app.command.scrapper_base'
     arguments:
-      $feedUrl: '%upwork_rss_feed_web_scraping%'
+      $feed: '@app.feed.freelance_com'
     tags:
-      - { name: 'console.command', command: 'app:upwork_rss_reader_web_scraping' }
+      - { name: 'console.command', command: 'app:freelance_com_scraping' }
 
-  app.command.upwork_rss_reader_web_research:
-    parent: 'app.command.upwork_rss_reader'
+  app.command.freelancehunt_ua_feed_scraping:
+    parent: 'app.command.scrapper_base'
     arguments:
-      $feedUrl: '%upwork_rss_feed_web_research%'
+      $feed: '@app.feed.freelancehunt_ua'
     tags:
-      - { name: 'console.command', command: 'app:upwork_rss_reader_web_research' }
+      - { name: 'console.command', command: 'app:freelancehunt_ua_scraping' }
 
-  app.command.upwork_rss_reader_web_crawler:
-    parent: 'app.command.upwork_rss_reader'
+  app.command.freelance_ua_feed_scraping:
+    parent: 'app.command.scrapper_base'
     arguments:
-      $feedUrl: '%upwork_rss_feed_web_crawler%'
+      $feed: '@app.feed.freelance_ua'
     tags:
-      - { name: 'console.command', command: 'app:upwork_rss_reader_web_crawler' }
+      - { name: 'console.command', command: 'app:freelance_ua_scraping' }
 
-  app.command.flru_rss_reader_scraping:
-    class: Freelance\Command\CheckFeedCommand
-    arguments:
-      $doctrine: '@doctrine'
-      $checker: '@app.checker.keywords.fl_ru'
-      $logger: '@logger'
-      $feed: '@app.feed.fl_ru'
-      $feedUrl: '%flru_rss_feed_scraping%'
-    tags:
-      - { name: 'console.command', command: 'app:flru_rss_reader_scraping' }
+#  app.command.flru_rss_reader_scraping: FUCKING russia
+#    parent: 'app.command.scrapper_base'
+#    arguments:
+#      $feed: '@app.feed.fl_ru'
+#    tags:
+#      - { name: 'console.command', command: 'app:flru_rss_reader_scraping' }
 
   app.command.notifier_telegram:
     class: Freelance\Command\NotifierCommand
     arguments:
-      $doctrine: '@doctrine'
+      $jobPositionRepository: '@Freelance\Repository\JobPositionRepository'
+      $jobRepository: '@Freelance\Repository\JobRepository'
       $notifier: '@app.notifier.telegram'
       $logger: '@logger'
     tags:

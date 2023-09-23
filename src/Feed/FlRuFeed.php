@@ -25,14 +25,19 @@ class FlRuFeed implements FeedInterface
         $this->loader = $loader;
     }
 
+    public function getFeedUrl(): string
+    {
+        return 'https://www.fl.ru/rss/all.xml?category=5&t='.time();
+    }
+
     /**
      * @param string $url
      * @return JobCollectionInterface
      * @throws Exception
      */
-    public function get(string $url): JobCollectionInterface
+    public function get(): JobCollectionInterface
     {
-        $feed = $this->loader->load($url);
+        $feed = $this->loader->load($this->getFeedUrl());
         $jobs = new JobCollection();
         if (preg_match_all('~<item>\s*<title><!\[CDATA\[(?<title>.*)\]\]></title>\s*<link>(?<link>.*)</link>\s*<description><!\[CDATA\[(?<description>.*)\]\]></description>\s*<guid>.*</guid>\s*<category><!\[CDATA\[(?<category>.*)\]\]></category>\s*<pubDate>(?<pubDate>.*)</pubDate>\s*</item>~imsuU', $feed, $matches)) {
             foreach ($matches['title'] as $key => $value) {

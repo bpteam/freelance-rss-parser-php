@@ -22,14 +22,15 @@ class MarkdownTemplate implements TemplateInterface
     {
         return sprintf(
 '# [%s](%s)
-%s
+Options: %s
 Publish: %s
-Options: %s',
+%s
+',
             $this->htmlConverter->convert($job->getTitle()),
             $job->getUrl(),
-            $this->htmlConverter->convert($job->getDescription()),
+            json_encode($job->getOptions(), JSON_UNESCAPED_UNICODE),
             $job->getPublishDate()->format('c'),
-            json_encode($job->getOptions(), JSON_UNESCAPED_UNICODE)
+            $this->htmlConverter->convert($job->getDescription()),
         );
     }
 }

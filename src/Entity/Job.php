@@ -8,6 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="Freelance\Repository\JobRepository")
+ * @ORM\Table(name="feed_parser_job")
  */
 class Job
 {
@@ -19,7 +20,7 @@ class Job
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=1000)
+     * @ORM\Column(type="text")
      */
     private $title;
 
@@ -29,7 +30,7 @@ class Job
     private $description;
 
     /**
-     * @ORM\Column(type="string", length=1000)
+     * @ORM\Column(type="string", length=5000)
      */
     private $url;
 

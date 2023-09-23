@@ -5,7 +5,7 @@ namespace Freelance\Tests\Feed;
 use Exception;
 use Freelance\Feed\FlRuFeed;
 use Freelance\Loader\LoaderInterface;
-use Symfony\Bundle\FrameworkBundle\Tests\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class FlRuFeedTest extends TestCase
 {
@@ -20,7 +20,7 @@ class FlRuFeedTest extends TestCase
     {
         $feed = new FlRuFeed($loader);
 
-        $jobs = $feed->get('dummy');
+        $jobs = $feed->get();
         foreach ($jobs as $job) {
             $this->assertNotEmpty($job->getUrl());
             $this->assertNotEmpty($job->getTitle());
@@ -35,8 +35,11 @@ class FlRuFeedTest extends TestCase
     {
         return [
             [
-                new MyLoaderFlRu($this::FIXTURE_PATH . '/2019-10-11-fl.ru-feed.xml')
+                new MyLoaderFlRu($this::FIXTURE_PATH . '/fl.ru-2019-10-11-feed.xml')
             ],
+//            [
+//                new MyLoaderFlRu($this::FIXTURE_PATH . '/fl.ru-2023-07-16-feed.xml')
+//            ],
         ];
     }
 }

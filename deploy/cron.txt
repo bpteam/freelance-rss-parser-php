@@ -1,0 +1,6 @@
+* * * * * sh -c '/app/bin/console app:notifier_telegram && curl https://uptime.bpteam.net/api/push/V2HPJRCxZu?status=up&msg=OK&ping='
+* * * * * sh -c '/app/bin/console app:upwork_rss_reader_scraping && curl https://uptime.bpteam.net/api/push/c5G6d0PbN7?status=up&msg=OK&ping='
+* * * * * sh -c '/app/bin/console app:free_lance_ua_scraping && curl https://uptime.bpteam.net/api/push/ctVj1JPpc4?status=up&msg=OK&ping='
+* * * * * sh -c '/app/bin/console app:freelance_com_scraping && curl https://uptime.bpteam.net/api/push/oxifpDoNlx?status=up&msg=OK&ping='
+* * * * * sh -c '/app/bin/console app:freelancehunt_ua_scraping && curl https://uptime.bpteam.net/api/push/PHydnKPbZP?status=up&msg=OK&ping='
+* * * * * sh -c '/app/bin/console app:freelance_ua_scraping && curl https://uptime.bpteam.net/api/push/hqTRVCTluN?status=up&msg=OK&ping='

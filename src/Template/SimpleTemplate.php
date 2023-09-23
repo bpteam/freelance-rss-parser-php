@@ -8,20 +8,21 @@ class SimpleTemplate implements TemplateInterface
 
     public function render(Job $job): string
     {
-        return sprintf('Job %d:
+        return sprintf('Job [%d]:
 URL: %s
 Title: %s
-Description: %s
+Options: %s
 Publish date: %s
 Created at: %s
-Options: %s',
+Description: %s
+',
             $job->getId(),
             $job->getUrl(),
             $job->getTitle(),
-            $job->getDescription(),
+            json_encode($job->getOptions(), JSON_UNESCAPED_UNICODE),
             $job->getPublishDate()->format('c'),
             $job->getCreatedAt()->format('c'),
-            json_encode($job->getOptions(), JSON_UNESCAPED_UNICODE)
+            $job->getDescription(),
         );
     }
 }

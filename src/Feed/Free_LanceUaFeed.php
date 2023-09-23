@@ -9,12 +9,12 @@ use Freelance\Collection\JobCollectionInterface;
 use Freelance\Entity\Job;
 use Freelance\Loader\LoaderInterface;
 
-class UpworkComFeed implements FeedInterface
+class Free_LanceUaFeed implements FeedInterface
 {
     /**
      * @var LoaderInterface
      */
-    private $loader;
+    private LoaderInterface $loader;
 
     /**
      * FlRuFeed constructor.
@@ -27,7 +27,7 @@ class UpworkComFeed implements FeedInterface
 
     public function getFeedUrl(): string
     {
-        return 'https://www.upwork.com/ab/feed/topics/rss?securityToken=f9b6f39073e9e85fa9160a1b900401d604ec1c664177a78d37aed30e8ff55de55465a1bb030912af366986ed2728f0b58582767d173c7d9e6201c990587bf1f4&userUid=1182274724678107136&orgUid=1182274724707467265&topic=4481918&t='.time();
+        return 'https://free-lance.ua/projects/?find=парсинг,парсер,сбор,парсити,парсить,cобрать,зібрати&t='.time();
     }
 
     /**
@@ -38,33 +38,33 @@ class UpworkComFeed implements FeedInterface
     {
         $feed = $this->loader->load($this->getFeedUrl());
         $jobs = new JobCollection();
-        if (preg_match_all('~<item>(?<item>.*)</item>~imsuU', $feed, $matches)) {
+        if (preg_match_all('~<div class="list_item_project(?<item>.*)<div class="list_item_project~imsuU', $feed, $matches)) {
             foreach ($matches['item'] as $item) {
                 $job = new Job();
                 $options = [];
-                if (preg_match('~<title><!\[CDATA\[(?<title>.*)\]\]></title>~imsuU', $item, $match)) {
+                if (preg_match('~<a class="title" href="[^"]*">(?<title>[^<]*)</a>~imsuU', $item, $match)) {
                     $job->setTitle($match['title']);
                 } else {
                     $job->setTitle('');
                 }
 
-                if (preg_match('~<link>(?<link>.*)</link>~imsu', $item, $match)) {
-                    $job->setUrl($match['link']);
+                if (preg_match('~<a class="title" href="(?<link>[^"]*)">[^<]*</a>~imsu', $item, $match)) {
+                    $job->setUrl('https://free-lance.ua/' . $match['link']);
                 } else {
                     $job->setUrl('');
                 }
 
-                if (preg_match('~<description><!\[CDATA\[(?<description>.*)\]\]></description>~imsuU', $item, $match)) {
-                    $job->setDescription($match['description']);
+                if (preg_match('~<td class="description">(?<description>.*)</td>~imsuU', $item, $match)) {
+                    $job->setDescription(strip_tags($match['description']));
                 } else {
                     $job->setDescription('');
                 }
 
-                if (preg_match('~<b>Budget</b>:\s*(?<price>.*)\s*<br\s*/>~imsuU', $item, $match)) {
+                if (preg_match('~<div class="price">(?<price>.*)</div>~imsuU', $item, $match)) {
                     $options['price'] = $match['price'];
                 }
 
-                if (preg_match('~<pubDate>(?<publish>[^<]+)</pubDate>~imsu', $item, $match)) {
+                if (preg_match('~<div>Добавлено: (?<publish>[^<]+)</div>~imsu', $item, $match)) {
                     $job->setPublishDate(new DateTime($match['publish']));
                 } else {
                     $job->setPublishDate(new DateTime());

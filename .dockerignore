@@ -1,6 +1,7 @@
 .git
 .gitignore
 var/
+vendor/
 .idea
 *.iml
 LICENSE

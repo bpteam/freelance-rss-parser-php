@@ -4,47 +4,55 @@ namespace Freelance\Notifier;
 
 use Freelance\Entity\Job;
 use Freelance\Template\TemplateInterface;
-use TgBotApi\BotApiBase\BotApi;
-use TgBotApi\BotApiBase\Exception\BadArgumentException;
-use TgBotApi\BotApiBase\Exception\ResponseException;
-use TgBotApi\BotApiBase\Method\SendMessageMethod;
+use Symfony\Component\Notifier\Notification\Notification;
+use Symfony\Component\Notifier\NotifierInterface as SymfonyNotifier;
 
 class TelegramNotifier implements NotifierInterface
 {
     private const MESSAGE_MAX_LENGTH = 4000;
-    /**
-     * @var TemplateInterface
-     */
-    private $template;
-    /**
-     * @var BotApi
-     */
-    private $bitApi;
-    /**
-     * @var string
-     */
-    private $userId;
 
     public function __construct(
-        TemplateInterface $template,
-        BotApi $bitApi,
-        string $userId
+        private readonly SymfonyNotifier $notifier,
+        private readonly TemplateInterface $template,
     ) {
-        $this->template = $template;
-        $this->bitApi = $bitApi;
-        $this->userId = $userId;
     }
 
     /**
      * @param Job $job
-     * @throws BadArgumentException
-     * @throws ResponseException
      */
     public function notify(Job $job)
     {
-        $this->bitApi->send(SendMessageMethod::create(
-            $this->userId,
-            substr($this->template->render($job), 0, self::MESSAGE_MAX_LENGTH)
-        ));
+        $this->notifier->send(
+            new Notification(substr($this->escape($this->template->render($job)), 0, self::MESSAGE_MAX_LENGTH)),
+        );
+    }
+
+    private function escape(string $string): string
+    {
+        $patterns = [
+            '_' => ' ',
+            '*' => ' ',
+            '[' => ' ',
+            ']' => ' ',
+            '(' => ' ',
+            ')' => ' ',
+            '~' => ' ',
+            '`' => ' ',
+            '>' => ' ',
+            '#' => ' ',
+            '+' => ' ',
+            '-' => ' ',
+            '=' => ' ',
+            '|' => ' ',
+            '{' => ' ',
+            '}' => ' ',
+            '.' => ' ',
+        ];
+
+        return str_replace(
+            array_keys($patterns),
+            array_values($patterns),
+            $string,
+        );
     }
 }

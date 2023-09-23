@@ -3,9 +3,9 @@
 namespace Freelance\Repository;
 
 use DateTimeInterface;
+use Doctrine\Persistence\ManagerRegistry;
 use Freelance\Entity\Job;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\Common\Persistence\ManagerRegistry;
 
 /**
  * @method Job|null find($id, $lockMode = null, $lockVersion = null)
@@ -37,37 +37,29 @@ class JobRepository extends ServiceEntityRepository
             ;
     }
 
+    /**
+     * @param int $id
+     * @return iterable|Job[]
+     */
+    public function findAfterId(int $id): iterable
+    {
+        return $this->createQueryBuilder('j')
+            ->andWhere('j.id > :id')
+            ->setParameter('id', $id)
+            ->orderBy('j.id', 'ASC')
+            ->getQuery()
+            ->getResult()
+            ;
+    }
+
     public function hasJobByUrl(string $url): bool
     {
         return (bool) $this->findBy(['url' => $url], null, 1);
     }
 
-    // /**
-    //  * @return Job[] Returns an array of Job objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    public function save(Job $job): void
     {
-        return $this->createQueryBuilder('j')
-            ->andWhere('j.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('j.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
+        $this->_em->persist($job);
+        $this->_em->flush();
     }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?Job
-    {
-        return $this->createQueryBuilder('j')
-            ->andWhere('j.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

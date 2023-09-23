@@ -12,3 +12,23 @@ services:
     class: Freelance\Feed\FlRuFeed
     arguments:
       $loader: '@app.loader'
+
+  app.feed.free_lance_ua:
+    class: Freelance\Feed\Free_LanceUaFeed
+    arguments:
+      $loader: '@app.loader'
+
+  app.feed.freelance_com:
+    class: Freelance\Feed\FreelanceComFeed
+    arguments:
+      $loader: '@app.loader'
+
+  app.feed.freelance_ua:
+    class: Freelance\Feed\FreelanceUaFeed
+    arguments:
+      $loader: '@app.loader'
+
+  app.feed.freelancehunt_ua:
+    class: Freelance\Feed\FreelanceHuntUaFeed
+    arguments:
+      $loader: '@app.loader'

@@ -5,7 +5,7 @@ namespace Freelance\Tests\Checker;
 use DateTime;
 use Freelance\Checker\KeywordsChecker;
 use Freelance\Entity\Job;
-use Symfony\Bundle\FrameworkBundle\Tests\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class KeywordCheckerTest extends TestCase
 {

@@ -3,11 +3,14 @@
 namespace Freelance\Tests\Feed;
 
 use Exception;
+use Freelance\Feed\FreelanceComFeed;
+use Freelance\Feed\FreelanceHuntUaFeed;
+use Freelance\Feed\FreelanceUaFeed;
 use Freelance\Feed\UpworkComFeed;
 use Freelance\Loader\LoaderInterface;
 use PHPUnit\Framework\TestCase;
 
-class UpworkFeedTest extends TestCase
+class FreelanceHuntUaFeedTest extends TestCase
 {
     private const FIXTURE_PATH = __DIR__ . '/../fixtures';
 
@@ -18,13 +21,13 @@ class UpworkFeedTest extends TestCase
      */
     public function testGet(LoaderInterface $loader)
     {
-        $feed = new UpworkComFeed($loader);
+        $feed = new FreelanceHuntUaFeed($loader);
 
         $jobs = $feed->get();
 
         foreach ($jobs as $job) {
             $this->assertNotEmpty($job->getUrl());
-            $this->assertNotEmpty($job->getTitle());
+            $this->assertNotEmpty($job->getTitle(), $job->getUrl());
             $this->assertNotEmpty($job->getDescription());
             $this->assertNotEmpty($job->getCreatedAt());
             $this->assertNotEmpty($job->getPublishDate());
@@ -35,14 +38,14 @@ class UpworkFeedTest extends TestCase
     {
         return [
             [
-                new MyLoaderUpwork($this::FIXTURE_PATH . '/upwork.com-2019-10-11-feed.xml')
+                new MyLoaderFreelanceHuntUa($this::FIXTURE_PATH . '/freelancehunt.ua-2023-07-16-feed.xml')
             ],
         ];
     }
 }
 
 
-class MyLoaderUpwork implements LoaderInterface
+class MyLoaderFreelanceHuntUa implements LoaderInterface
 {
     private $fixture;
     public function __construct($fixture)

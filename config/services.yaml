@@ -5,6 +5,8 @@ parameters:
   app.name: '%env(APP_NAME)%'
   app.version: '%env(VERSION)%'
 
+  telegram_bot_key_freelance_scraper: '%env(TELEGRAM_BOT_NOTIFIER)%'
+
 imports:
   - { resource: services/*.yaml }
 

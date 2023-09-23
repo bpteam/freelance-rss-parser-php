@@ -3,7 +3,50 @@ services:
     autowire: true
     autoconfigure: true
 
-  app.checker.keywords.upwork_com:
+  app.checker.keywords.common:
+    class: Freelance\Checker\KeywordsChecker
+    arguments:
+      $keywords:
+        - 'scrape'
+        - 'scrapi'
+        - 'crawler'
+        - 'crawling'
+        - 'extract'
+        - 'parser'
+        - 'parsing'
+        - 'data mining'
+        - 'collect'
+        - 'парсинг'
+        - 'парсер'
+        - 'парсити'
+        - 'сбор'
+        - 'парсить'
+        - 'cобрать'
+        - 'зібрати'
+        - 'scrape'
+        - 'scrapi'
+        - 'crawler'
+        - 'crawling'
+        - 'extract'
+        - 'parser'
+        - 'parsing'
+        - 'data mining'
+        - 'collect'
+        - 'парсе'
+        - 'парса'
+        - 'парси'
+        - 'сбор'
+        - 'собрать'
+        - 'скрапер'
+        - 'скраппер'
+        - 'екстрактор'
+        - 'экстрактор'
+        - 'parser'
+        - 'scrape'
+        - 'scrapi'
+        - 'extract'
+
+  app.checker.keywords.en:
     class: Freelance\Checker\KeywordsChecker
     arguments:
       $keywords:
@@ -17,7 +60,28 @@ services:
         - 'data mining'
         - 'collect'
 
-  app.checker.keywords.fl_ru:
+  app.checker.keywords.uk:
+    class: Freelance\Checker\KeywordsChecker
+    arguments:
+      $keywords:
+        - 'парсинг'
+        - 'парсер'
+        - 'парсити'
+        - 'сбор'
+        - 'парсить'
+        - 'cобрать'
+        - 'зібрати'
+        - 'scrape'
+        - 'scrapi'
+        - 'crawler'
+        - 'crawling'
+        - 'extract'
+        - 'parser'
+        - 'parsing'
+        - 'data mining'
+        - 'collect'
+
+  app.checker.keywords.ru:
     class: Freelance\Checker\KeywordsChecker
     arguments:
       $keywords:

@@ -3,11 +3,12 @@
 namespace Freelance\Tests\Feed;
 
 use Exception;
+use Freelance\Feed\FreelanceComFeed;
 use Freelance\Feed\UpworkComFeed;
 use Freelance\Loader\LoaderInterface;
 use PHPUnit\Framework\TestCase;
 
-class UpworkFeedTest extends TestCase
+class FreelanceComFeedTest extends TestCase
 {
     private const FIXTURE_PATH = __DIR__ . '/../fixtures';
 
@@ -18,7 +19,7 @@ class UpworkFeedTest extends TestCase
      */
     public function testGet(LoaderInterface $loader)
     {
-        $feed = new UpworkComFeed($loader);
+        $feed = new FreelanceComFeed($loader);
 
         $jobs = $feed->get();
 
@@ -35,14 +36,14 @@ class UpworkFeedTest extends TestCase
     {
         return [
             [
-                new MyLoaderUpwork($this::FIXTURE_PATH . '/upwork.com-2019-10-11-feed.xml')
+                new MyLoaderFreelanceCom($this::FIXTURE_PATH . '/freelance.com-2023-07-16-feed.xml')
             ],
         ];
     }
 }
 
 
-class MyLoaderUpwork implements LoaderInterface
+class MyLoaderFreelanceCom implements LoaderInterface
 {
     private $fixture;
     public function __construct($fixture)
